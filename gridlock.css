@@ -1,7 +1,7 @@
 /*
  * Gridlock - A CSS responsive grid system
  * @author Ben Plum
- * @version 0.1
+ * @version 0.1.1
  *
  * Copyright © 2012 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
@@ -14,9 +14,9 @@
 	.gridlock .g_row { margin-left: auto; margin-right: auto; width: 960px; }
 	.gridlock .g_row:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden; }
 	.gridlock .g_row .g_row { margin-left: -1.0416666666666667%; margin-right: -1.0416666666666667%; width: 102.0833333333333334%; }
-	.gridlock .g_row [class*="_cell_"] { float: left; margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; }
-	.gridlock .g_row [class*="_cell_"].right { float: right; }
-	.gridlock .g_row [class*="_cell_"].padded { margin-left: 0; margin-right: 0; padding-left: 1.0416666666666667%; padding-right: 1.0416666666666667%; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; -ms-box-sizing: content-box; -o-box-sizing: content-box; box-sizing: content-box; *behavior: none; }
+	.gridlock .g_row [class*="cell_"] { float: left; margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; }
+	.gridlock .g_row [class*="cell_"].right { float: right; }
+	.gridlock .g_row [class*="cell_"].padded { margin-left: 0; margin-right: 0; padding-left: 1.0416666666666667%; padding-right: 1.0416666666666667%; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; -ms-box-sizing: content-box; -o-box-sizing: content-box; box-sizing: content-box; *behavior: none; }
 	
 	
 	/* Rows */
@@ -45,48 +45,60 @@
 	
 	
 	/* d == Desktop, 1220 + 960 (min 980), 12 column */
-	@media screen and (min-width: 980px) {
-		.gridlock .g_row .d_cell_1  { width: 6.25%; }
-		.gridlock .g_row .d_cell_2  { width: 14.5833333333333333%; }
-		.gridlock .g_row .d_cell_3  { width: 22.9166666666666667%; }
-		.gridlock .g_row .d_cell_4  { width: 31.25%; }
-		.gridlock .g_row .d_cell_5  { width: 39.5833333333333333%; }
-		.gridlock .g_row .d_cell_6  { width: 47.9166666666666667%; }
-		.gridlock .g_row .d_cell_7  { width: 56.25%; }
-		.gridlock .g_row .d_cell_8  { width: 64.5833333333333333%; }
-		.gridlock .g_row .d_cell_9  { width: 72.9166666666666667%; }
-		.gridlock .g_row .d_cell_10 { width: 81.25%; }
-		.gridlock .g_row .d_cell_11 { width: 89.5833333333333333%; }
-		.gridlock .g_row .d_cell_12 { width: 97.9166666666666667%; }
-		
-		.gridlock .g_row .d_push_1  { margin-left: 9.375%; }
-		.gridlock .g_row .d_push_2  { margin-left: 17.7083333333333333%; }
-		.gridlock .g_row .d_push_3  { margin-left: 26.0416666666666667%; }
-		.gridlock .g_row .d_push_4  { margin-left: 34.375%; }
-		.gridlock .g_row .d_push_5  { margin-left: 42.7083333333333334%; }
-		.gridlock .g_row .d_push_6  { margin-left: 51.0416666666666667%; }
-		.gridlock .g_row .d_push_7  { margin-left: 59.375%; }
-		.gridlock .g_row .d_push_8  { margin-left: 67.7083333333334%; }
-		.gridlock .g_row .d_push_9  { margin-left: 76.0416666666668%; }
-		.gridlock .g_row .d_push_10 { margin-left: 84.375%; }
-		.gridlock .g_row .d_push_11 { margin-left: 92.7083333333335%; }
-		
-		.gridlock .g_row .d_push_1.right  { margin-left: 1.0416666666666667%; margin-right: 9.375%; }
-		.gridlock .g_row .d_push_2.right  { margin-left: 1.0416666666666667%; margin-right: 17.7083333333333333%; }
-		.gridlock .g_row .d_push_3.right  { margin-left: 1.0416666666666667%; margin-right: 26.0416666666666667%; }
-		.gridlock .g_row .d_push_4.right  { margin-left: 1.0416666666666667%; margin-right: 34.375%; }
-		.gridlock .g_row .d_push_5.right  { margin-left: 1.0416666666666667%; margin-right: 42.7083333333333334%; }
-		.gridlock .g_row .d_push_6.right  { margin-left: 1.0416666666666667%; margin-right: 51.0416666666666667%; }
-		.gridlock .g_row .d_push_7.right  { margin-left: 1.0416666666666667%; margin-right: 59.375%; }
-		.gridlock .g_row .d_push_8.right  { margin-left: 1.0416666666666667%; margin-right: 67.7083333333334%; }
-		.gridlock .g_row .d_push_9.right  { margin-left: 1.0416666666666667%; margin-right: 76.0416666666668%; }
-		.gridlock .g_row .d_push_10.right { margin-left: 1.0416666666666667%; margin-right: 84.375%; }
-		.gridlock .g_row .d_push_11.right { margin-left: 1.0416666666666667%; margin-right: 92.7083333333335%; }
-	}
+	.gridlock .g_row .d_cell_1  { width: 6.25%; }
+	.gridlock .g_row .d_cell_2  { width: 14.5833333333333333%; }
+	.gridlock .g_row .d_cell_3  { width: 22.9166666666666667%; }
+	.gridlock .g_row .d_cell_4  { width: 31.25%; }
+	.gridlock .g_row .d_cell_5  { width: 39.5833333333333333%; }
+	.gridlock .g_row .d_cell_6  { width: 47.9166666666666667%; }
+	.gridlock .g_row .d_cell_7  { width: 56.25%; }
+	.gridlock .g_row .d_cell_8  { width: 64.5833333333333333%; }
+	.gridlock .g_row .d_cell_9  { width: 72.9166666666666667%; }
+	.gridlock .g_row .d_cell_10 { width: 81.25%; }
+	.gridlock .g_row .d_cell_11 { width: 89.5833333333333333%; }
+	.gridlock .g_row .d_cell_12 { width: 97.9166666666666667%; }
+	
+	.gridlock .g_row .d_push_1  { margin-left: 9.375%; }
+	.gridlock .g_row .d_push_2  { margin-left: 17.7083333333333333%; }
+	.gridlock .g_row .d_push_3  { margin-left: 26.0416666666666667%; }
+	.gridlock .g_row .d_push_4  { margin-left: 34.375%; }
+	.gridlock .g_row .d_push_5  { margin-left: 42.7083333333333334%; }
+	.gridlock .g_row .d_push_6  { margin-left: 51.0416666666666667%; }
+	.gridlock .g_row .d_push_7  { margin-left: 59.375%; }
+	.gridlock .g_row .d_push_8  { margin-left: 67.7083333333334%; }
+	.gridlock .g_row .d_push_9  { margin-left: 76.0416666666668%; }
+	.gridlock .g_row .d_push_10 { margin-left: 84.375%; }
+	.gridlock .g_row .d_push_11 { margin-left: 92.7083333333335%; }
+	
+	.gridlock .g_row .d_push_1.right  { margin-left: 1.0416666666666667%; margin-right: 9.375%; }
+	.gridlock .g_row .d_push_2.right  { margin-left: 1.0416666666666667%; margin-right: 17.7083333333333333%; }
+	.gridlock .g_row .d_push_3.right  { margin-left: 1.0416666666666667%; margin-right: 26.0416666666666667%; }
+	.gridlock .g_row .d_push_4.right  { margin-left: 1.0416666666666667%; margin-right: 34.375%; }
+	.gridlock .g_row .d_push_5.right  { margin-left: 1.0416666666666667%; margin-right: 42.7083333333333334%; }
+	.gridlock .g_row .d_push_6.right  { margin-left: 1.0416666666666667%; margin-right: 51.0416666666666667%; }
+	.gridlock .g_row .d_push_7.right  { margin-left: 1.0416666666666667%; margin-right: 59.375%; }
+	.gridlock .g_row .d_push_8.right  { margin-left: 1.0416666666666667%; margin-right: 67.7083333333334%; }
+	.gridlock .g_row .d_push_9.right  { margin-left: 1.0416666666666667%; margin-right: 76.0416666666668%; }
+	.gridlock .g_row .d_push_10.right { margin-left: 1.0416666666666667%; margin-right: 84.375%; }
+	.gridlock .g_row .d_push_11.right { margin-left: 1.0416666666666667%; margin-right: 92.7083333333335%; }
+	
+	/*  */
+	.gridlock .g_row .cell_third  { width: 31.25%; }
+	.gridlock .g_row .cell_half  { width: 47.9166666666666667%; }
+	.gridlock .g_row .cell_full  { width: 97.9166666666666667%; }
+	
+	.gridlock .g_row .cell_push_third  { margin-left: 34.375%; }
+	.gridlock .g_row .cell_push_half  { margin-left: 51.0416666666666667%; }
+	
+	.gridlock .g_row .cell_push_third.right  { margin-left: 1.0416666666666667%; margin-right: 34.375%; }
+	.gridlock .g_row .cell_push_half.right  { margin-left: 1.0416666666666667%; margin-right: 51.0416666666666667%; }
+	
 	
 	
 	/* t == Tablet, 720 + 480 (min 500), 6 column */
 	@media screen and (min-width: 500px) and (max-width: 979px) {
+		.gridlock .g_row [class*="d_push_"] { margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; }
+		
 		.gridlock .g_row .t_cell_1 { width: 14.5833333333333333%; }
 		.gridlock .g_row .t_cell_2 { width: 31.25%; }
 		.gridlock .g_row .t_cell_3 { width: 47.9166666666666667%; }
@@ -110,6 +122,9 @@
 	
 	/* m == Mobile, 300 (min 0), 3 column */
 	@media screen and (min-width: 0px) and (max-width: 499px) {
+		.gridlock .g_row [class*="d_push_"],
+		.gridlock .g_row [class*="t_push_"] { margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; }
+		
 		.gridlock .g_row .m_cell_1 { width: 31.25%; }
 		.gridlock .g_row .m_cell_2 { width: 64.5833333333333333%; }
 		.gridlock .g_row .m_cell_3 { width: 97.9166666666666667%; }
