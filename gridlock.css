@@ -1,7 +1,7 @@
 /*
  * Gridlock - A CSS responsive grid system
  * @author Ben Plum
- * @version 0.1.1
+ * @version 0.1.3
  *
  * Copyright © 2012 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
@@ -18,33 +18,24 @@
 	.gridlock .g_row [class*="cell_"].right { float: right; }
 	.gridlock .g_row [class*="cell_"].padded { margin-left: 0; margin-right: 0; padding-left: 1.0416666666666667%; padding-right: 1.0416666666666667%; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; -ms-box-sizing: content-box; -o-box-sizing: content-box; box-sizing: content-box; *behavior: none; }
 	
-	
-	/* Rows */
+	/* !Rows, Smallest to largest */
 	@media screen and (min-width: 0) {
 		.gridlock .g_row { width: 300px; }
 	}
-	
 	@media screen and (min-width: 500px) {
 		.gridlock .g_row { width: 480px; }
 	}
-	
 	@media screen and (min-width: 740px) {
 		.gridlock .g_row { width: 720px; }
 	}
-	
 	@media screen and (min-width: 980px) {
 		.gridlock .g_row { width: 960px; }
 	}
-	
 	@media screen and (min-width: 1220px) {
 		.gridlock .g_row { width: 1200px; }
 	}
 	
-	
-	/* Cells */
-	
-	
-	/* d == Desktop, 1220 + 960 (min 980), 12 column */
+	/* !Desktop, 12 column, 1220 + 960 (min 980), IE fallback */
 	.gridlock .g_row .d_cell_1  { width: 6.25%; }
 	.gridlock .g_row .d_cell_2  { width: 14.5833333333333333%; }
 	.gridlock .g_row .d_cell_3  { width: 22.9166666666666667%; }
@@ -82,20 +73,18 @@
 	.gridlock .g_row .d_push_10.right { margin-left: 1.0416666666666667%; margin-right: 84.375%; }
 	.gridlock .g_row .d_push_11.right { margin-left: 1.0416666666666667%; margin-right: 92.7083333333335%; }
 	
-	/*  */
-	.gridlock .g_row .cell_third  { width: 31.25%; }
-	.gridlock .g_row .cell_half  { width: 47.9166666666666667%; }
-	.gridlock .g_row .cell_full  { width: 97.9166666666666667%; }
+	/* !Generic, fractions */
+	.gridlock .g_row .cell_third { width: 31.25%; }
+	.gridlock .g_row .cell_half { width: 47.9166666666666667%; }
+	.gridlock .g_row .cell_full { width: 97.9166666666666667%; }
 	
-	.gridlock .g_row .cell_push_third  { margin-left: 34.375%; }
-	.gridlock .g_row .cell_push_half  { margin-left: 51.0416666666666667%; }
+	.gridlock .g_row .cell_push_third { margin-left: 34.375%; }
+	.gridlock .g_row .cell_push_half { margin-left: 51.0416666666666667%; }
 	
-	.gridlock .g_row .cell_push_third.right  { margin-left: 1.0416666666666667%; margin-right: 34.375%; }
-	.gridlock .g_row .cell_push_half.right  { margin-left: 1.0416666666666667%; margin-right: 51.0416666666666667%; }
+	.gridlock .g_row .cell_push_third.right { margin-left: 1.0416666666666667%; margin-right: 34.375%; }
+	.gridlock .g_row .cell_push_half.right { margin-left: 1.0416666666666667%; margin-right: 51.0416666666666667%; }
 	
-	
-	
-	/* t == Tablet, 720 + 480 (min 500), 6 column */
+	/* !Tablet, 6 column, 720 + 480 (min 500) */
 	@media screen and (min-width: 500px) and (max-width: 979px) {
 		.gridlock .g_row [class*="d_push_"] { margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; }
 		
@@ -119,11 +108,12 @@
 		.gridlock .g_row .t_push_5.right { margin-left: 1.0416666666666667%; margin-right: 84.375%; }
 	}
 	
-	
-	/* m == Mobile, 300 (min 0), 3 column */
-	@media screen and (min-width: 0px) and (max-width: 499px) {
-		.gridlock .g_row [class*="d_push_"],
-		.gridlock .g_row [class*="t_push_"] { margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; }
+	/* !Mobile, 3 column, 300 (max 499) */
+	@media screen and (max-width: 499px) {
+		.gridlock .g_row [class*="d_push_"], 
+		.gridlock .g_row [class*="t_push_"], 
+		.gridlock .g_row [class*="d_push_"].right,
+		.gridlock .g_row [class*="t_push_"].right { margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; }
 		
 		.gridlock .g_row .m_cell_1 { width: 31.25%; }
 		.gridlock .g_row .m_cell_2 { width: 64.5833333333333333%; }
@@ -135,5 +125,3 @@
 		.gridlock .g_row .m_push_1.right { margin-left: 1.0416666666666667%; margin-right: 34.375%; }
 		.gridlock .g_row .m_push_2.right { margin-left: 1.0416666666666667%; margin-right: 67.7083333333334%; }
 	}
-	
-	

@@ -1,7 +1,7 @@
 Gridlock
 ========
 
-A semantic CSS responsive grid system.
+A responsive CSS grid system.
 
 [Documentation and Examples](http://www.benplum.com/projects/gridlock/)
 
