@@ -1,7 +1,7 @@
 /*
- * Gridlock - A CSS responsive grid system
+ * Gridlock - A CSS responsive grid system [16 column standard]
  * @author Ben Plum
- * @version 0.1.7
+ * @version 0.1.8
  *
  * Copyright © 2013 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mitablet-license.php>
@@ -113,12 +113,14 @@
 		.gridlock .row .tablet-5 { width: 81.25%; }
 		.gridlock .row .tablet-6 { width: 97.9166666666666667%; }
 		
+		/* Push Cells */
 		.gridlock .row .tablet-push-1 { margin-left: 17.7083333333333333%; }
 		.gridlock .row .tablet-push-2 { margin-left: 34.375%; }
 		.gridlock .row .tablet-push-3 { margin-left: 51.0416666666666667%; }
 		.gridlock .row .tablet-push-4 { margin-left: 67.7083333333334%; }
 		.gridlock .row .tablet-push-5 { margin-left: 84.375%; }
 		
+		/* !Generic, fractions */
 		.gridlock .row .tablet-third { width: 31.25%; }
 		.gridlock .row .tablet-half { width: 47.9166666666666667%; }
 		.gridlock .row .tablet-full { width: 97.9166666666666667%; }
@@ -136,9 +138,11 @@
 		.gridlock .row .mobile-2 { width: 64.5833333333333333%; }
 		.gridlock .row .mobile-3 { width: 97.9166666666666667%; }
 		
+		/* Push Cells */
 		.gridlock .row .mobile-push-1 { margin-left: 34.375%; }
 		.gridlock .row .mobile-push-2 { margin-left: 67.7083333333334%; }
 		
+		/* !Generic, fractions */
 		.gridlock .row .mobile-third { width: 31.25%; }
 		.gridlock .row .mobile-half { width: 47.9166666666666667%; }
 		.gridlock .row .mobile-full { width: 97.9166666666666667%; }
