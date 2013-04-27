@@ -4,11 +4,11 @@
  * @version 0.1.9
  *
  * Copyright © 2013 Ben Plum <mr@benplum.com>
- * Released under the MIT License <http://www.opensource.org/licenses/mitablet-license.php>
+ * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
  */
  
 	/* !Reset Box-sizing */
-	* { -webkitablet-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; *behavior: url(boxsizing.htc); }
+	* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; *behavior: url(boxsizing.htc); }
 	
 	/* !Defaults */
 	.gridlock .row { margin-left: auto; margin-right: auto; width: 960px; /* Fallback */ }
