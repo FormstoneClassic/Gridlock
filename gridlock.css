@@ -75,8 +75,6 @@
 	
 	/* !Desktop - Max, 12 column, 1200 (min 1221) */
 	@media screen and (min-width: 1221px) {
-		.gridlock .row [class*="desktop-push-"] { margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; }
-		
 		.gridlock .row .max-1  { width: 6.25%; }
 		.gridlock .row .max-2  { width: 14.5833333333333333%; }
 		.gridlock .row .max-3  { width: 22.9166666666666667%; }
