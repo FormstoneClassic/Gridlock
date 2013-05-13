@@ -1,14 +1,14 @@
 /*
  * Gridlock - A CSS responsive grid system [16 column variant]
  * @author Ben Plum
- * @version 0.1.9
+ * @version 0.2.0
  *
  * Copyright © 2013 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mitablet-license.php>
  */
  
 	/* !Reset Box-sizing */
-	* { -webkitablet-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; *behavior: url(boxsizing.htc); }
+	* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; *behavior: url(boxsizing.htc); }
 	
 	/* !Defaults */
 	.gridlock .row { margin-left: auto; margin-right: auto; width: 960px; /* Fallback */ }
@@ -132,13 +132,13 @@
 		.gridlock .row .tablet-8 { width: 97.916666666667%; }
 		
 		/* Push Cells */
-		.gridlock .row .tablet-push-1  { margin-left: 12.5%; }
-		.gridlock .row .tablet-push-2  { margin-left: 25%; }
-		.gridlock .row .tablet-push-3  { margin-left: 37.5%; }
-		.gridlock .row .tablet-push-4  { margin-left: 50%; }
-		.gridlock .row .tablet-push-5 { margin-left: 62.5%; }
-		.gridlock .row .tablet-push-6 { margin-left: 75%; }
-		.gridlock .row .tablet-push-7 { margin-left: 87.5%; }
+		.gridlock .row .tablet-push-1  { margin-left: 13.54166666666667%; }
+		.gridlock .row .tablet-push-2  { margin-left: 26.04166666666667%; }
+		.gridlock .row .tablet-push-3  { margin-left: 38.54166666666667%; }
+		.gridlock .row .tablet-push-4  { margin-left: 51.04166666666667%; }
+		.gridlock .row .tablet-push-5 { margin-left: 63.54166666666667%; }
+		.gridlock .row .tablet-push-6 { margin-left: 76.04166666666667%; }
+		.gridlock .row .tablet-push-7 { margin-left: 88.54166666666667%; }
 		
 		/* !Generic, fractions */
 		.gridlock .row .tablet-third { width: 31.25%; }
