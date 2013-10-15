@@ -1,0 +1,22 @@
+{
+	"name": "Gridlock",
+	"version": "0.2.2",
+	"description": "A responsive CSS grid system.",
+	"keywords": [
+		"css"
+		"benplum"
+	],
+	"authors": [
+		"Ben Plum"
+	],
+	"license": "MIT",
+	"homepage": "http://www.benplum.com/projects/gridlock/",
+	"main": [],
+	"ignore": [
+		"*.json"
+	],
+	"dependencies": {
+		"jquery": ">= 1.7.0"
+	},
+	"devDependencies": {}
+}
