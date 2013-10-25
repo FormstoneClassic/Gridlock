@@ -1,7 +1,7 @@
 /*
  * Gridlock - A CSS responsive grid system [Base]
  * @author Ben Plum
- * @version 1.0.1
+ * @version 1.0.2
  *
  * Copyright © 2013 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
@@ -61,9 +61,10 @@
 		.gridlock .row .mobile-push-2 { margin-left: 67.7083333333334%; }
 		
 		/* Fractions */
-		.gridlock .row .mobile-third { width: 31.25%; }
-		.gridlock .row .mobile-half  { width: 47.9166666666666667%; }
-		.gridlock .row .mobile-full  { width: 97.9166666666666667%; }
+		.gridlock .row .mobile-fourth { width: 22.91666666666666%; }
+		.gridlock .row .mobile-third  { width: 31.25%; }
+		.gridlock .row .mobile-half   { width: 47.9166666666666667%; }
+		.gridlock .row .mobile-full   { width: 97.9166666666666667%; }
 		
 		.gridlock .row .mobile-push-third { margin-left: 34.375%; }
 		.gridlock .row .mobile-push-half  { margin-left: 51.0416666666666667%; }
@@ -74,9 +75,10 @@
 		.gridlock .row .contained.mobile-3 { width: 100%; }
 		
 		/* Contained Fractions */
-		.gridlock .row .contained.mobile-third { width: 33.33333333333333%; }
-		.gridlock .row .contained.mobile-half  { width: 50%; }
-		.gridlock .row .contained.mobile-full  { width: 100%; }
+		.gridlock .row .contained.mobile-fourth { width: 25%; }
+		.gridlock .row .contained.mobile-third  { width: 33.33333333333333%; }
+		.gridlock .row .contained.mobile-half   { width: 50%; }
+		.gridlock .row .contained.mobile-full   { width: 100%; }
 		
 		.gridlock .row .contained.mobile-push-third { margin-left: 33.33333333333333%; }
 		.gridlock .row .contained.mobile-push-half  { margin-left: 50%; }
@@ -107,17 +109,19 @@
 	/* !Tablet, 6 column, 720 (min 740) */
 	@media screen and (min-width: 740px) and (max-width: 980px) {
 		/* Generic, fractions */
-		.gridlock .row .tablet-third { width: 31.25%; }
-		.gridlock .row .tablet-half  { width: 47.9166666666666667%; }
-		.gridlock .row .tablet-full  { width: 97.9166666666666667%; }
+		.gridlock .row .tablet-fourth { width: 22.91666666666666%; }
+		.gridlock .row .tablet-third  { width: 31.25%; }
+		.gridlock .row .tablet-half   { width: 47.9166666666666667%; }
+		.gridlock .row .tablet-full   { width: 97.9166666666666667%; }
 		
 		.gridlock .row .tablet-push-third { margin-left: 34.375%; }
 		.gridlock .row .tablet-push-half  { margin-left: 51.0416666666666667%; }
 		
 		/* 'Contained' Cells - Fractions */
-		.gridlock .row .contained.tablet-third { width: 33.33333333333333%; }
-		.gridlock .row .contained.tablet-half  { width: 50%; }
-		.gridlock .row .contained.tablet-full  { width: 100%; }
+		.gridlock .row .contained.tablet-fourth { width: 25%; }
+		.gridlock .row .contained.tablet-third  { width: 33.33333333333333%; }
+		.gridlock .row .contained.tablet-half   { width: 50%; }
+		.gridlock .row .contained.tablet-full   { width: 100%; }
 		
 		.gridlock .row .contained.tablet-push-third { margin-left: 33.33333333333333%; }
 		.gridlock .row .contained.tablet-push-half  { margin-left: 50%; }
@@ -129,14 +133,16 @@
 	/* !Desktop, 12 column, 960 (min 980) */
 	@media screen and (min-width: 980px) {
 		/* Fractions */
-		.gridlock .row .desktop-third { width: 31.25%; }
-		.gridlock .row .desktop-half  { width: 47.9166666666666667%; }
-		.gridlock .row .desktop-full  { width: 97.9166666666666667%; }
+		.gridlock .row .desktop-fourth { width: 22.91666666666666%; }
+		.gridlock .row .desktop-third  { width: 31.25%; }
+		.gridlock .row .desktop-half   { width: 47.9166666666666667%; }
+		.gridlock .row .desktop-full   { width: 97.9166666666666667%; }
 		
 		.gridlock .row .desktop-push-third { margin-left: 34.375%; }
 		.gridlock .row .desktop-push-half  { margin-left: 51.0416666666666667%; }
 		
 		/* Contained Fractions */
+		.gridlock .row .contained.desktop-fourth { width: 25%; }
 		.gridlock .row .contained.desktop-third { width: 33.33333333333333%; }
 		.gridlock .row .contained.desktop-half  { width: 50%; }
 		.gridlock .row .contained.desktop-full  { width: 100%; }
@@ -150,7 +156,17 @@
 	
 	/* !Desktop, Max, 12 column, 1200 (min 1220) */
 	@media screen and (min-width: 1220px) {
+		/* Fractions */
+		.gridlock .row .max-fourth { width: 22.91666666666666%; }
+		.gridlock .row .max-third  { width: 31.25%; }
+		.gridlock .row .max-half   { width: 47.9166666666666667%; }
+		.gridlock .row .max-full   { width: 97.9166666666666667%; }
+		
+		.gridlock .row .max-push-third { margin-left: 34.375%; }
+		.gridlock .row .max-push-half  { margin-left: 51.0416666666666667%; }
+		
 		/* Contained Fractions */
+		.gridlock .row .contained.max-fourth { width: 25%; }
 		.gridlock .row .contained.max-third { width: 33.33333333333333%; }
 		.gridlock .row .contained.max-half  { width: 50%; }
 		.gridlock .row .contained.max-full  { width: 100%; }
