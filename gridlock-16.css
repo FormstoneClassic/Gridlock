@@ -1,7 +1,7 @@
 /*
  * Gridlock - A CSS responsive grid system [16 column]
  * @author Ben Plum
- * @version 1.1.0
+ * @version 1.2.1
  *
  * Copyright © 2013 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
@@ -37,6 +37,15 @@
 		.gridlock .row .contained.tablet-6 { width: 75%; }
 		.gridlock .row .contained.tablet-7 { width: 87.5%; }
 		.gridlock .row .contained.tablet-8 { width: 100%; }
+		
+		/* Contained Push */
+		.gridlock .row .contained.tablet-push-1 { margin-left: 12.5%; }
+		.gridlock .row .contained.tablet-push-2 { margin-left: 25%; }
+		.gridlock .row .contained.tablet-push-3 { margin-left: 37.5%; }
+		.gridlock .row .contained.tablet-push-4 { margin-left: 50%; }
+		.gridlock .row .contained.tablet-push-5 { margin-left: 62.5%; }
+		.gridlock .row .contained.tablet-push-6 { margin-left: 75%; }
+		.gridlock .row .contained.tablet-push-7 { margin-left: 87.5%; }
 	}
 	
 	/* !Desktop, 16 column, 960 (min 980) */
@@ -93,6 +102,23 @@
 		.gridlock .row .contained.desktop-14 { width: 87.5%; }
 		.gridlock .row .contained.desktop-15 { width: 93.75%; }
 		.gridlock .row .contained.desktop-16 { width: 100%; }
+		
+		/* Contained Push */
+		.gridlock .row .contained.desktop-push-1  { margin-left: 6.25%; }
+		.gridlock .row .contained.desktop-push-2  { margin-left: 12.5%; }
+		.gridlock .row .contained.desktop-push-3  { margin-left: 18.75%; }
+		.gridlock .row .contained.desktop-push-4  { margin-left: 25%; }
+		.gridlock .row .contained.desktop-push-5  { margin-left: 31.25%; }
+		.gridlock .row .contained.desktop-push-6  { margin-left: 37.5%; }
+		.gridlock .row .contained.desktop-push-7  { margin-left: 43.75%; }
+		.gridlock .row .contained.desktop-push-8  { margin-left: 50%; }
+		.gridlock .row .contained.desktop-push-9  { margin-left: 5.25%; }
+		.gridlock .row .contained.desktop-push-10 { margin-left: 62.5%; }
+		.gridlock .row .contained.desktop-push-11 { margin-left: 68.75%; }
+		.gridlock .row .contained.desktop-push-12 { margin-left: 75%; }
+		.gridlock .row .contained.desktop-push-13 { margin-left: 82.25%; }
+		.gridlock .row .contained.desktop-push-14 { margin-left: 87.5%; }
+		.gridlock .row .contained.desktop-push-15 { margin-left: 93.75%; }
 	}
 	
 	/* !Desktop, Max, 12 column, 1200 (min 1220) */
@@ -149,4 +175,21 @@
 		.gridlock .row .contained.max-14 { width: 87.5%; }
 		.gridlock .row .contained.max-15 { width: 93.75%; }
 		.gridlock .row .contained.max-16 { width: 100%; }
+		
+		/* Contained Push */
+		.gridlock .row .contained.max-push-1  { margin-left: 6.25%; }
+		.gridlock .row .contained.max-push-2  { margin-left: 12.5%; }
+		.gridlock .row .contained.max-push-3  { margin-left: 18.75%; }
+		.gridlock .row .contained.max-push-4  { margin-left: 25%; }
+		.gridlock .row .contained.max-push-5  { margin-left: 31.25%; }
+		.gridlock .row .contained.max-push-6  { margin-left: 37.5%; }
+		.gridlock .row .contained.max-push-7  { margin-left: 43.75%; }
+		.gridlock .row .contained.max-push-8  { margin-left: 50%; }
+		.gridlock .row .contained.max-push-9  { margin-left: 5.25%; }
+		.gridlock .row .contained.max-push-10 { margin-left: 62.5%; }
+		.gridlock .row .contained.max-push-11 { margin-left: 68.75%; }
+		.gridlock .row .contained.max-push-12 { margin-left: 75%; }
+		.gridlock .row .contained.max-push-13 { margin-left: 82.25%; }
+		.gridlock .row .contained.max-push-14 { margin-left: 87.5%; }
+		.gridlock .row .contained.max-push-15 { margin-left: 93.75%; }
 	}

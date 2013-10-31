@@ -1,7 +1,7 @@
 /*
  * Gridlock - A CSS responsive grid system [Base]
  * @author Ben Plum
- * @version 1.1.0
+ * @version 1.2.1
  *
  * Copyright © 2013 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
@@ -16,6 +16,7 @@
 	.gridlock .row .desktop-half   { width: 47.9166666666666667%; }
 	.gridlock .row .desktop-full   { width: 97.9166666666666667%; }
 	
+	/* Fractions Push */
 	.gridlock .row .desktop-push-third { margin-left: 34.375%; }
 	.gridlock .row .desktop-push-half  { margin-left: 51.0416666666666667%; }
 	
@@ -25,6 +26,7 @@
 	.gridlock .row .contained.desktop-half  { width: 50%; }
 	.gridlock .row .contained.desktop-full  { width: 100%; }
 	
+	/* Contained Fractions Push */
 	.gridlock .row .contained.desktop-push-third { margin-left: 33.33333333333333%; }
 	.gridlock .row .contained.desktop-push-half  { margin-left: 50%; }
 	
@@ -73,6 +75,19 @@
 	.gridlock .row .contained.desktop-10 { width: 83.33333333333333%; }
 	.gridlock .row .contained.desktop-11 { width: 91.66666666666683%; }
 	.gridlock .row .contained.desktop-12 { width: 100%; }
+	
+	/* Contained Push */
+	.gridlock .row .contained.desktop-push-1  { margin-left: 7.29166666666667%; }
+	.gridlock .row .contained.desktop-push-2  { margin-left: 16.66666666666667%; }
+	.gridlock .row .contained.desktop-push-3  { margin-left: 25%; }
+	.gridlock .row .contained.desktop-push-4  { margin-left: 33.33333333333333%; }
+	.gridlock .row .contained.desktop-push-5  { margin-left: 41.66666666666667%; }
+	.gridlock .row .contained.desktop-push-6  { margin-left: 50%; }
+	.gridlock .row .contained.desktop-push-7  { margin-left: 58.33333333333333%; }
+	.gridlock .row .contained.desktop-push-8  { margin-left: 66.66666666666673%; }
+	.gridlock .row .contained.desktop-push-9  { margin-left: 75%; }
+	.gridlock .row .contained.desktop-push-10 { margin-left: 83.33333333333333%; }
+	.gridlock .row .contained.desktop-push-11 { margin-left: 91.66666666666683%; }
 	
 	
 	/* !Desktop 16 */
@@ -129,3 +144,20 @@
 	.gridlock-16 .row .contained.desktop-14 { width: 87.5%; }
 	.gridlock-16 .row .contained.desktop-15 { width: 93.75%; }
 	.gridlock-16 .row .contained.desktop-16 { width: 100%; }
+	
+	/* Contained Push */
+	.gridlock-16 .row .contained.desktop-push-1  { margin-left: 6.25%; }
+	.gridlock-16 .row .contained.desktop-push-2  { margin-left: 12.5%; }
+	.gridlock-16 .row .contained.desktop-push-3  { margin-left: 18.75%; }
+	.gridlock-16 .row .contained.desktop-push-4  { margin-left: 25%; }
+	.gridlock-16 .row .contained.desktop-push-5  { margin-left: 31.25%; }
+	.gridlock-16 .row .contained.desktop-push-6  { margin-left: 37.5%; }
+	.gridlock-16 .row .contained.desktop-push-7  { margin-left: 43.75%; }
+	.gridlock-16 .row .contained.desktop-push-8  { margin-left: 50%; }
+	.gridlock-16 .row .contained.desktop-push-9  { margin-left: 5.25%; }
+	.gridlock-16 .row .contained.desktop-push-10 { margin-left: 62.5%; }
+	.gridlock-16 .row .contained.desktop-push-11 { margin-left: 68.75%; }
+	.gridlock-16 .row .contained.desktop-push-12 { margin-left: 75%; }
+	.gridlock-16 .row .contained.desktop-push-13 { margin-left: 82.25%; }
+	.gridlock-16 .row .contained.desktop-push-14 { margin-left: 87.5%; }
+	.gridlock-16 .row .contained.desktop-push-15 { margin-left: 93.75%; }
