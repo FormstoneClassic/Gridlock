@@ -1,35 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-		<meta name="keywords" content="" />
-		<meta name="description" content="" /> 
     	
-		<title>Ben Plum&nbsp;&nbsp;/&nbsp;&nbsp;Projects&nbsp;&nbsp;/&nbsp;&nbsp;Gridlock&nbsp;&nbsp;/&nbsp;&nbsp;Demo&nbsp;&nbsp;/&nbsp;&nbsp;12 Column Mobile First</title>
+		<title>Gridlock Demo - 12 Column</title>
 		
-		<link rel="shortcut icon" href="http://www.benplum.com/favicon.ico" type="image/x-icon" />
 		<link href="http://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet" type="text/css" media="all" />
-		<link href="http://www.benplum.com/css/site.css" rel="stylesheet" type="text/css" media="all" />
-		
-		<!--[if LTE IE 8]>
-			<script src="http://www.benplum.com/js/html5.js"></script>
-		<![endif]-->
-		
-		<script type="text/javascript">
-			var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-7020380-10']);
-			_gaq.push(['_trackPageview']);
-			(function() {
-				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
+		<link href="http://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" type="text/css">
+		<link href="demo.css" rel="stylesheet" type="text/css" media="all" />
 		
 		<link href="../gridlock-base.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="../gridlock-12.css" rel="stylesheet" type="text/css" media="all" />
+		
+		<!--[if LTE IE 8]>
+			<link href="../gridlock-ie.css" rel="stylesheet" type="text/css" media="all" />
+		<![endif]-->
 		
 		<style>
 			.gridlock_demo .example { margin-bottom: 30px; margin-top: 0; }
@@ -54,33 +40,37 @@
 		</style>
 	</head>
 	<body class="gridlock demo">
-		<div class="page_header bordered_bottom">
+		<header class="header">
 			<div class="row">
-				<div class="desktop-8 desktop-push-2 tablet-6 mobile-3">
+				<div class="mobile-full tablet-full desktop-8 desktop-push-2">
 					<h1>Gridlock Demo</h1>
 					<hr />
 					<p>Gridlock is a simple responsive grid system that will kickstart your next site build. <a href="http://www.benplum.com/projects/gridlock/" class="no-pronto">Learn More.</a></p>
 				</div>
-				<div class="mobile-3 tablet-6 desktop-8 desktop-push-2">
-					<a href="gridlock-12.html" class="button left active">12 Column</a>
-					<a href="gridlock-16.html" class="button right">16 Column</a>
+			</div>
+			<div class="row">
+				<div class="mobile-full tablet-half desktop-4 desktop-push-2">
+					<a href="gridlock-12.html" class="button active">12 Column</a>
+				</div>
+				<div class="mobile-full tablet-half desktop-4">
+					<a href="gridlock-16.html" class="button">16 Column</a>
 				</div>
 			</div>
-		</div>
-		<div class="row">	
-			<div class="desktop-12 tablet-6 mobile-3 gridlock_demo">
+		</header>
+		<article class="row page">
+			<div class="mobile-full tablet-full desktop-full gridlock_demo">
 				
 				<!-- Asymmetrical -->
 				<h2>Asymmetrical</h2>
 					<pre class="language-markup"><code>&lt;body class=&quot;gridlock&quot;&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;
-		Sidebar
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;
+			Sidebar
+		&lt;/div&gt;
+		&lt;div class=&quot;desktop-8 tablet-4 mobile-3&quot;&gt;
+			Content
+		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;desktop-8 tablet-4 mobile-3&quot;&gt;
-		Content
-	&lt;/div&gt;
-&lt;/div&gt;
 &lt;/body&gt;</code></pre>
 				
 				<h5>Demo</h5>
@@ -107,20 +97,20 @@
 				<h2>Symmetrical</h2>
 				
 				<pre class="language-markup"><code>&lt;body class=&quot;gridlock&quot;&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;desktop-3 tablet-3 mobile-3&quot;&gt;
-		One
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;desktop-3 tablet-3 mobile-3&quot;&gt;
+			One
+		&lt;/div&gt;
+		&lt;div class=&quot;desktop-3 tablet-3 mobile-3&quot;&gt;
+			Two
+		&lt;/div&gt;
+		&lt;div class=&quot;desktop-3 tablet-3 mobile-3&quot;&gt;
+			Three
+		&lt;/div&gt;
+		&lt;div class=&quot;desktop-3 tablet-3 mobile-3&quot;&gt;
+			Four
+		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;desktop-3 tablet-3 mobile-3&quot;&gt;
-		Two
-	&lt;/div&gt;
-	&lt;div class=&quot;desktop-3 tablet-3 mobile-3&quot;&gt;
-		Three
-	&lt;/div&gt;
-	&lt;div class=&quot;desktop-3 tablet-3 mobile-3&quot;&gt;
-		Four
-	&lt;/div&gt;
-&lt;/div&gt;
 &lt;/body&gt;</code></pre>
 				
 				<h5>Demo</h5>
@@ -156,17 +146,17 @@
 				<!-- 3 Column -->
 				<h2>3 Column</h2>
 				<pre class="language-markup"><code>&lt;body class=&quot;gridlock&quot;&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;
-		One
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;
+			One
+		&lt;/div&gt;
+		&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;
+			Two
+		&lt;/div&gt;
+		&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;
+			Three
+		&lt;/div&gt;
 	&lt;/div&gt;
-	&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;
-		Two
-	&lt;/div&gt;
-	&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;
-		Three
-	&lt;/div&gt;
-&lt;/div&gt;
 &lt;/body&gt;</code></pre>
 				
 				<h5>Demo</h5>
@@ -198,16 +188,16 @@
 				<h2>Push</h2>
 				
 				<pre class="language-markup"><code>&lt;body class=&quot;gridlock&quot;&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;desktop-4 desktop-push-4 tablet-2 tablet-push-2 mobile-2 mobile-push-1&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;desktop-4 desktop-push-2 tablet-2 tablet-push-1 mobile-1&quot;&gt;&lt;/div&gt;
-	&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;
-	&lt;div class=&quot;desktop-12 tablet-6 mobile-3&quot;&gt;&lt;/div&gt;
-&lt;/div&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;desktop-4 desktop-push-4 tablet-2 tablet-push-2 mobile-2 mobile-push-1&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;desktop-4 desktop-push-2 tablet-2 tablet-push-1 mobile-1&quot;&gt;&lt;/div&gt;
+		&lt;div class=&quot;desktop-4 tablet-2 mobile-1&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;desktop-12 tablet-6 mobile-3&quot;&gt;&lt;/div&gt;
+	&lt;/div&gt;
 &lt;/body&gt;</code></pre>
 				
 				<h5>Demo</h5>
@@ -247,14 +237,14 @@
 				<h2>Padded</h2>
 				
 				<pre class="language-markup"><code>&lt;body class=&quot;gridlock&quot;&gt;
-	&lt;div class=&quot;row&quot;&gt;
-		&lt;div class=&quot;desktop-4 tablet-2 mobile-1 padded&quot;&gt;
-			Sidebar
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;desktop-4 tablet-2 mobile-1 padded&quot;&gt;
+				Sidebar
+			&lt;/div&gt;
+			&lt;div class=&quot;desktop-8 tablet-4 mobile-2 padded&quot;&gt;
+				Content
+			&lt;/div&gt;
 		&lt;/div&gt;
-		&lt;div class=&quot;desktop-8 tablet-4 mobile-2 padded&quot;&gt;
-			Content
-		&lt;/div&gt;
-	&lt;/div&gt;
 &lt;/body&gt;</code></pre>
 				
 				<h5>Demo</h5>
@@ -280,14 +270,14 @@
 				<h2>Contained</h2>
 				
 				<pre class="language-markup"><code>&lt;body class=&quot;gridlock&quot;&gt;
-	&lt;div class=&quot;row&quot;&gt;
-		&lt;div class=&quot;desktop-4 tablet-2 mobile-1 contained&quot;&gt;
-			Sidebar
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;desktop-4 tablet-2 mobile-1 contained&quot;&gt;
+				Sidebar
+			&lt;/div&gt;
+			&lt;div class=&quot;desktop-8 tablet-4 mobile-2 contained&quot;&gt;
+				Content
+			&lt;/div&gt;
 		&lt;/div&gt;
-		&lt;div class=&quot;desktop-8 tablet-4 mobile-2 contained&quot;&gt;
-			Content
-		&lt;/div&gt;
-	&lt;/div&gt;
 &lt;/body&gt;</code></pre>
 				
 				<h5>Demo</h5>
@@ -306,110 +296,17 @@
 					</div>
 				</div>
 				<!-- END Contained -->
-			
-<!--
-			<hr />
-			
-			<div class="row">
-				<div class="desktop-6 tablet-3 mobile-2">
-					<span class="label_d">desktop-6</span>
-					<span class="label_t">tablet-3</span>
-					<span class="label_m">mobile-2</span>
-				</div>
-				<div class="desktop-6 tablet-3 mobile-1">
-					<span class="label_d">desktop-6</span>
-					<span class="label_t">tablet-3</span>
-					<span class="label_m">mobile-1</span>
-				</div>
+				
 			</div>
-			
-			<hr />
-			
-			<div class="row">
-				<div class="desktop-4 tablet-2 mobile-1">
-					<span class="label_d">desktop-4</span>
-					<span class="label_t">tablet-2</span>
-					<span class="label_m">mobile-1</span>
-				</div>
-				<div class="desktop-4 tablet-2 mobile-2">
-					<span class="label_d">desktop-4</span>
-					<span class="label_t">tablet-2</span>
-					<span class="label_m">mobile-2</span>
-				</div>
-				<div class="desktop-4 tablet-2 mobile-3">
-					<span class="label_d">desktop-4</span>
-					<span class="label_t">tablet-2</span>
-					<span class="label_m">mobile-3</span>
-				</div>
-			</div>
-			
-			<hr />
-			
-			<div class="row">
-				<div class="desktop-8 tablet-4 mobile-2">
-					<span class="label_d">desktop-8</span>
-					<span class="label_t">tablet-4</span>
-					<span class="label_m">mobile-2</span>
-				</div>
-				<div class="desktop-4 tablet-2 mobile-1">
-					<span class="label_d">desktop-8</span>
-					<span class="label_t">tablet-4</span>
-					<span class="label_m">mobile-1</span>
-				</div>
-			</div>
-			
-			<hr />
-			
-			<div class="row">
-				<div class="desktop-8 desktop-push-2 tablet-4 tablet-push-1 mobile-3">
-					<span class="label_d">desktop-8 desktop-push-2</span>
-					<span class="label_t">tablet-4 tablet-push-1</span>
-					<span class="label_m">mobile-3</span>
-				</div>
-			</div>
-			
-			<hr />
-			
-			<div class="row">
-				<div class="right desktop-4 desktop-push-2 tablet-2 tablet-push-1 mobile-2">
-					<span class="label_d">right desktop-4 desktop-push-2</span>
-					<span class="label_t">right tablet-2 tablet-push-1</span>
-					<span class="label_m">mobile-2</span>
-				</div>
-			</div>
-			
-			<hr />
-			
-			<div class="row">
-				<div class="cell_half">
-					<span class="label">cell_half</span>
-				</div>
-				<div class="cell_half">
-					<span class="label">cell_half</span>
-				</div>
-				<div class="cell_full">
-					<span class="label">cell_full</span>
-				</div>
-				<div class="cell_third">
-					<span class="label">cell_third</span>
-				</div>
-				<div class="cell_third">
-					<span class="label">cell_third</span>
-				</div>
-				<div class="cell_third">
-					<span class="label">cell_third</span>
-				</div>
-			</div>
--->
-			</div>
-		</div>
+		</article>
 		
-		<script src="http://www.benplum.com/js/site.js"></script>
 		<script>
+			/*
 			var GridlockBookmarkletConfig = {
-			    /* onLoad: true */
+			    onLoad: true,
 			    useCookies: true
 			};
+			*/
 			(function(){if(typeof GridlockBookmarklet=='undefined'){document.body.appendChild(document.createElement('script')).src='http://www.benplum.com/js/gridlock.bookmarklet.js';}else{GridlockBookmarklet();}})();
 		</script>
 	</body>

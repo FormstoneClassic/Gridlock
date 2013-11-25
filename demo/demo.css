@@ -1,0 +1,114 @@
+/*
+ * Sprout - A CSS reset & normalizer
+ * @author Ben Plum
+ * @version 0.0.3
+ *
+ * Copyright (c) 2013 Ben Plum <mr@benplum.com>
+ * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
+ */
+	
+	/* Reset Box Sizing */
+	* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -o-box-sizing: border-box; box-sizing: border-box; *behavior: url(boxsizing.htc); }
+	
+	/* Reset Properties */
+	a, abbr, address, area, article, aside, audio, b, bdi, bdo, blockquote, body, /* button, */ canvas, caption, cite, code, col, colgroup, command, data, datagrid, datalist, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, head, header, hgroup, html, i, iframe, img, /* input, */ ins, kbd, keygen, label, legend, li, link, mark, map, menu, meter, nav, object, ol, optgroup, option, output, p, pre, progress, q, ruby, rp, rt, s, samp, section, /* select, */ small, span, strong, sub, summary, sup, table, tbody, td, /* textarea, */ tfoot, th, thead, time, title, tr, track, u, ul, var, video { border: 0; font: inherit; font-size: 100%; margin: 0; outline: 0; padding: 0; vertical-align: baseline; }
+	
+	/* Reset Display Roles */
+	article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
+	audio, canvas, video { display: inline-block; }
+	
+	html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+	body { line-height: 1; }
+	
+	:focus, :hover, :active { outline: none; }
+	
+	ol, ul { list-style: none; }
+	table { border-collapse: collapse; border-spacing: 0; }
+	blockquote, q { quotes: none; }
+	blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+	
+	/* Form Inconsistencies */
+	button, input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; cursor: pointer; }
+	button[disabled], input[disabled] { cursor: default; }
+	input[type="checkbox"], input[type="radio"] { box-sizing: border-box; }
+	input[type="search"] { -webkit-appearance: textfield; }
+	input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+	button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner { border: 0; padding: 0; margin: 0; }
+	
+/*---------------------------
+  Transitions
+---------------------------*/
+	*, *:link, *:visited, *:hover, *:active, *:focus {
+		-webkit-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+		   -moz-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+		   	-ms-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+		   	 -o-transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+		   	 	transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, opacity 0.1s linear;
+	}
+	
+/*---------------------------
+  Elements
+---------------------------*/ 
+	body { background: #f9f9f9; color: #666; font-family: 'Lato', sans-serif; font-size: 15px; font-weight: 300; line-height: 1.4; overflow-y: scroll; *overflow-y: auto; padding: 0; }
+	body * { word-wrap: break-word; }
+	
+	h1, h2, h3, h4, h5, h6 { color: #333; font-weight: 400; line-height: 1.1; margin: 20px 0; }
+	h1 {  }
+	h2 { }
+	h3 { }
+	h4 { }
+	h5 { }
+	h6 { }
+	
+	a { text-decoration: none; }
+	a:hover { }
+	em { }
+	strong { }
+	p a { border-bottom: 1px solid #eee; color: #666; }
+	
+	ol, ul { margin: 20px 0; }
+	li { line-height: 1.4; margin: 5px 0; }
+	ol { }
+	ol li { }
+	ul { }
+	ul li { }
+	
+	hr { background: #ccc; border: none; height: 2px; margin: 30px 0; }
+	
+	pre, code { color: #333; font-family: 'PTMonoRegular', monospace; font-size: 13px; }
+	pre { border: 1px solid #ddd; border-radius: 3px; margin: 20px 0 25px; overflow-y: auto; padding: 15px 20px; }
+	
+	textarea { border-radius: 3px; }
+	
+	.button { background: #999; border: none; border-radius: 3px; color: #fff; display: block; font-size: 13px; font-weight: 900; line-height: 1.4; letter-spacing: 0.15em; margin: 0 0 10px; padding: 17px 10px; text-align: center; text-transform: uppercase; }
+	.button.active { background: #666; }
+	
+	
+/*-------------------------------------------
+  Global
+-------------------------------------------*/
+	.left { float: left; }
+	.block_left { float: left; margin: 0 20px 20px 0; }
+	.right { float: right; }
+	.block_right { float: right; margin: 0 0 20px 20px; }
+	.center { text-align: center; }
+	.clear { clear: both; }
+	.contain { overflow: hidden; }
+	
+	.clear_fix:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden; }
+	
+/*-------------------------------------------
+  Structure
+-------------------------------------------*/
+	.demo { background: #fff; }
+	.demo h1 { color: #222; font-size: 60px; font-weight: 900; }
+	.demo h2 { color: #DA0108; font-size: 26px; margin: 0 0 15px; text-transform: uppercase; }
+	.demo h3 { color: #333; font-size: 22px; margin: 0 0 15px; }
+	.demo h5 { color: #888; font-size: 18px; margin: 25px 0 15px; text-transform: uppercase; }
+	
+	.header { background: #f9f9f9; border-bottom: 1px solid #ccc; padding: 50px 0; }
+	.header p { color: #666; margin: 30px 0; }
+	.header a { border-color: rgba(0, 0, 0, 0.15); color: #666; }
+	.header .button { border: none; color: #fff; }
+	
+	.page { padding: 50px 0; }
