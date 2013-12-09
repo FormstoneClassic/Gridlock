@@ -1,7 +1,7 @@
 /*
  * Gridlock - A CSS responsive grid system [Base]
  * @author Ben Plum
- * @version 1.2.4
+ * @version 1.2.5
  *
  * Copyright © 2013 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
@@ -95,15 +95,17 @@
 	
 	/* !Mobile - Min, 300 (max 500) */
 	@media screen and (max-width: 500px) {
-		/* .gridlock .row .min-push-0 { margin-left: 1.0416666666666667%; margin-right: 1.0416666666666667%; } */
-		
 		/* Cells */
-		.gridlock .row .min-full { width: 97.9166666666666667%; }
+		.gridlock .row .min-fourth { width: 22.91666666666666%; }
+		.gridlock .row .min-third  { width: 31.25%; }
+		.gridlock .row .min-half   { width: 47.9166666666666667%; }
+		.gridlock .row .min-full   { width: 97.9166666666666667%; }
 		
 		/* Contained Fractions */
-		.gridlock .row .contained.min-third { width: 33.33333333333333%; }
-		.gridlock .row .contained.min-half  { width: 50%; }
-		.gridlock .row .contained.min-full  { width: 100%; }
+		.gridlock .row .contained.min-fourth { width: 25%; }
+		.gridlock .row .contained.min-third  { width: 33.33333333333333%; }
+		.gridlock .row .contained.min-half   { width: 50%; }
+		.gridlock .row .contained.min-full   { width: 100%; }
 		
 		/* Contained Fractions Push */
 		.gridlock .row .contained.min-push-third { margin-left: 33.33333333333333%; }
