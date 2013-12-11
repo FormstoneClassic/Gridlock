@@ -1,7 +1,7 @@
 /*
  * Gridlock - A CSS responsive grid system [Base]
  * @author Ben Plum
- * @version 1.2.5
+ * @version 1.3.0
  *
  * Copyright © 2013 Ben Plum <mr@benplum.com>
  * Released under the MIT License <http://www.opensource.org/licenses/mit-license.php>
@@ -48,6 +48,17 @@
 	@media screen and (min-width: 1220px) {
 		.gridlock .row { width: 1200px; }
 	}
+	
+	/* !All */
+	.gridlock .row .all-fourth { width: 22.91666666666666%; }
+	.gridlock .row .all-third  { width: 31.25%; }
+	.gridlock .row .all-half   { width: 47.9166666666666667%; }
+	.gridlock .row .all-full   { width: 97.9166666666666667%; }
+	
+	.gridlock .row .contained.all-fourth { width: 25%; }
+	.gridlock .row .contained.all-third  { width: 33.33333333333333%; }
+	.gridlock .row .contained.all-half   { width: 50%; }
+	.gridlock .row .contained.all-full   { width: 100%; }
 	
 	/* !Mobile, 540 (max 740) */
 	@media screen and (max-width: 740px) {
