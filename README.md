@@ -1,12 +1,10 @@
-# Gridlock
+<a href="http://gruntjs.com" target="_blank"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt"></a> 
+# Gridlock 
 
-A responsive CSS grid system.
+A responsive CSS grid system. Part of the Formstone Library. 
 
-- [Demo](http://www.benplum.com/components/Gridlock/demo/gridlock-12.html)
-- [Documentation](http://www.benplum.com/projects/gridlock/)
+- [Demo](http://formstone.it/components/Gridlock/demo/index.html) 
+- [Documentation](http://formstone.it/gridlock/) 
 
-Includes [Box-sixing Polyfill](https://github.com/Schepp/box-sizing-polyfill) for IE 6/7 by Christian Schepp Schaefer
-
-#### Bower Support
-
+#### Bower Support 
 `bower install Gridlock`
