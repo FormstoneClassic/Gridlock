@@ -34,9 +34,7 @@ module.exports = function(grunt) {
 					overrides: {
 						main: [
 							'<%= pkg.codename %>-base.css',
-							'<%= pkg.codename %>-12.css',
-							'<%= pkg.codename %>-16.css',
-							'<%= pkg.codename %>-ie.css'
+							'<%= pkg.codename %>-12.css'
 						],
 						ignore: [ "*.jquery.json", "Gruntfile.js", "src/" ]
 					}
