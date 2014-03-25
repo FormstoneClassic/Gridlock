@@ -35,6 +35,8 @@
 			.label_t,
 			.label_m { display: none; }
 
+			.button.bookmarklet { background: #999; clear: both; float: left; padding: 0 20px; width: auto; }
+
 			@media screen and (max-width: 979px) {
 				.label_d { display: none; }
 			}
@@ -49,7 +51,7 @@
 		<script>
 		</script>
 	</head>
-	<body class="gridlock demo">
+	<body class="gridlock gridlock-16 demo">
 		<header id="header">
 			<div class="row">
 				<div class="all-full">
@@ -58,14 +60,26 @@
 			</div>
 		</header>
 		<article class="row page">
-			<div class="mobile-full tablet-full desktop-12 desktop-push-2">
+			<div class="mobile-full tablet-full desktop-full">
 				<header class="header">
 					<h1>Gridlock Demo</h1>
 					<h3>16 Column</h3>
 					<p><a href="demo-12.html">Switch to 12 column demo</a></p>
-					<br />
+					<br>
 					<a href="http://formstone.it/gridlock/" class="button">View Documentation</a>
 				</header>
+
+				<!-- Bookmarklet -->
+				<h2>Bookmarklet</h2>
+				<p>Drag the bookmarklet to your bookmarks bar.</p>
+				<a href="javascript:(function(){if(typeof%20GridlockBookmarklet=='undefined'){document.body.appendChild(document.createElement('script')).src='http://formstone.it/js/gridlock.bookmarklet.js';}else{GridlockBookmarklet();}})();" class="button bookmarklet">Gridlock</a>
+				<br class="clear">
+				<p>Or, include it on every page of your development site:</p>
+				<pre class="example"><code class="language-markup">&lt;script&gt;
+(function(){if(typeof GridlockBookmarklet=='undefined'){document.body.appendChild(document.createElement('script')).src='http://formstone.it/js/gridlock.bookmarklet.js';}else{GridlockBookmarklet();}})();
+&lt;/script&gt;</code></pre>
+
+				<br>
 
 				<!-- Asymmetrical -->
 				<h2>Asymmetrical</h2>
@@ -98,7 +112,7 @@
 				</div>
 				<!-- END Asymmetrical -->
 
-				<hr />
+				<br>
 
 				<!-- Symmetrical -->
 				<h2>Symmetrical</h2>
@@ -148,7 +162,7 @@
 				</div>
 				<!-- END Symmetrical -->
 
-				<hr />
+				<br>
 
 				<!-- 3 Column -->
 <!--
@@ -191,7 +205,7 @@
 -->
 				<!-- END 3 Column -->
 
-<!-- 				<hr /> -->
+<!-- 				<br> -->
 
 				<!-- Push -->
 				<h2>Push</h2>
@@ -240,7 +254,7 @@
 				</div>
 				<!-- END Push -->
 
-				<hr />
+				<br>
 
 				<!-- Padded -->
 				<h2>Padded</h2>
@@ -273,7 +287,7 @@
 				</div>
 				<!-- END Padded -->
 
-				<hr />
+				<br>
 
 				<!-- Contained -->
 				<h2>Contained</h2>
