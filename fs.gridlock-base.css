@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.0.5 - 2014-03-25 
+ * Gridlock v3.0.5 - 2014-03-27 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -58,6 +58,8 @@
 	@media screen and (min-width: 1220px) {
 		.gridlock .row { width: 1200px; }
 	}
+
+	.gridlock-fluid .row { width: 98%; }
 
 	/* !All */
 	.gridlock .row .all-fourth { width: 22.91666666666666%; }
