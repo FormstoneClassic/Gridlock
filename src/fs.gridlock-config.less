@@ -1,0 +1,126 @@
+/* Variables */
+
+@class-container:     gridlock;
+@class-row:           row;
+@class-contained:     contained;
+@class-padded:        padded;
+@class-centered:      center;
+
+@class-all:           all;
+@class-min:           min;
+@class-mobile:        mobile;
+@class-tablet:        tablet;
+@class-desktop:       desktop;
+@class-max:           max;
+
+@columns-mobile:      3;
+@columns-tablet:      6;
+@columns-desktop:     12;
+
+@width-min:           300px;
+@width-mobile:        480px;
+@width-tablet:        720px;
+@width-desktop:       960px;
+@width-max:           1200px;
+
+@width-break-min:     320px;
+@width-break-mobile:  500px;
+@width-break-tablet:  740px;
+@width-break-desktop: 980px;
+@width-break-max:     1220px;
+
+@gutter:              1.0416666666666667%;
+
+/* Column */
+
+.column (@count, @margin, @index) {
+	width: ((100% / @count) * @index) - (@margin * 2);
+}
+
+/* Columns */
+
+.columns (@class, @margin, @count, @prefix:~"", @index:1) when (@index <= @count) {
+	@{prefix}.@{class}-@{index} {
+		.column(@count, @margin, @index);
+	}
+
+	.columns(@class, @margin, @count, @prefix, (@index + 1));
+}
+
+/* Columns - Fractioned */
+
+.columnsFractioned (@class, @margin, @prefix:~"") {
+	@{prefix}.@{class}-fourth {
+		.column(4, @margin, 1);
+	}
+	@{prefix}.@{class}-third {
+		.column(3, @margin, 1);
+	}
+	@{prefix}.@{class}-half {
+		.column(2, @margin, 1);
+	}
+	@{prefix}.@{class}-full {
+		.column(1, @margin, 1);
+	}
+}
+
+/* Columns - Pushed */
+
+.columnPushed (@count, @margin, @index) {
+	margin-left: ((100% / @count) * @index) + @margin;
+}
+
+.columnsPushed (@class, @margin, @count, @prefix:~"", @index:1) when (@index < @count) {
+	@{prefix}.@{class}-push-@{index} {
+		.columnPushed(@count, @margin, @index);
+	}
+
+	.columnsPushed(@class, @margin, @count, @prefix, (@index + 1));
+}
+
+.columnsPushedFractioned (@class, @margin, @prefix:~"") {
+	@{prefix}.@{class}-push-fourth {
+		.columnPushed(4, @margin, 1);
+	}
+	@{prefix}.@{class}-push-third {
+		.columnPushed(3, @margin, 1);
+	}
+	@{prefix}.@{class}-push-half {
+		.columnPushed(2, @margin, 1);
+	}
+}
+
+/* Scafold - Base */
+
+.scafoldGridBase (@class) {
+	/* Fractions */
+	.columnsFractioned(@class, @gutter);
+
+	/* Fractions Push */
+	.columnsPushedFractioned(@class, @gutter);
+
+	/* Fractions Contained */
+	.columnsFractioned(@class, 0, ~".@{class-contained}");
+
+	/* Fractions Contained Push */
+	.columnsPushedFractioned(@class, 0, ~".@{class-contained}");
+
+	/* Centered */
+	.@{class-container} .@{class-row} [class*="@{class}-"].@{class-centered} { margin-left: auto; margin-right: auto; }
+}
+
+/* Scafold - Grid */
+
+.scafoldGrid (@class, @columns) {
+	/* Cells */
+	.columns(@class, @gutter, @columns);
+
+	/* Cells Push */
+	.columnsPushed(@class, @gutter, @columns);
+
+	/* Contained */
+	.columns(@class, 0, @columns, ~".@{class-contained}");
+
+	/* Contained Push */
+	.columnsPushed(@class, 0, @columns, ~".@{class-contained}");
+}

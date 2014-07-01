@@ -12,17 +12,34 @@ module.exports = function(grunt) {
 					' * Copyright <%= grunt.template.today("yyyy") %> <%= pkg.author.name %>; <%= pkg.license %> Licensed \n' +
 					' */ \n\n'
 		},
-		// Concat
-		concat: {
-			css: {
+		// LESS
+		less: {
+			target: {
 				options: {
-					banner: '<%= meta.banner %>'
+					report: 'min',
+					cleancss: true
 				},
 				files: {
-					'<%= pkg.codename %>-base.css': [ 'src/<%= pkg.codename %>-base.css' ],
-					'<%= pkg.codename %>-12.css': [ 'src/<%= pkg.codename %>-12.css' ],
-					'<%= pkg.codename %>-16.css': [ 'src/<%= pkg.codename %>-16.css' ],
-					'<%= pkg.codename %>-ie.css': [ 'src/<%= pkg.codename %>-ie.css' ]
+					'<%= pkg.codename %>-base.css': [ 'src/<%= pkg.codename %>-base.less' ],
+					'<%= pkg.codename %>-grid.css': [ 'src/<%= pkg.codename %>-grid.less' ],
+					'<%= pkg.codename %>-ie.css': [ 'src/<%= pkg.codename %>-ie.less' ]
+				}
+			}
+		},
+		//Banner
+		usebanner: {
+			banner: {
+				options: {
+					position: 'top',
+					banner: '<%= meta.banner %>',
+					linebreak: false
+				},
+				files: {
+					src: [
+						'<%= pkg.codename %>-base.css',
+						'<%= pkg.codename %>-grid.css',
+						'<%= pkg.codename %>-ie.css'
+					]
 				}
 			}
 		},
@@ -41,19 +58,6 @@ module.exports = function(grunt) {
 				}
 			}
 		}
-/*
-		// LESS
-		less: {
-			target: {
-				options: {
-					banner: '<%= meta.banner %>',
-					report: 'min',
-					cleancss: false
-				},
-				files: '<%= pkg.css %>'
-			}
-		}
-*/
 	});
 
 	// Readme
@@ -73,10 +77,11 @@ module.exports = function(grunt) {
 	});
 
 	// Load tasks
-	grunt.loadNpmTasks('grunt-contrib-concat');
+	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-banner');
 	grunt.loadNpmTasks('grunt-npm2bower-sync');
 
 	// Default task.
-	grunt.registerTask('default', [ 'concat', 'sync', 'buildReadme' ]);
+	grunt.registerTask('default', [ 'less', 'usebanner', 'sync', 'buildReadme' ]);
 
 };

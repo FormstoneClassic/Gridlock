@@ -1,0 +1,15 @@
+@import "fs.gridlock-config.less";
+
+ 	/* !Reset Box-sizing */
+	*,
+	*:before,
+	*:after { *behavior: url(boxsizing.htc); }
+
+ 	/* IE Specific */
+ 	.@{class-container} .@{class-row} {
+ 		width: 960px;
+
+ 		.scafoldGridBase(@class-desktop);
+
+ 		.scafoldGrid(@class-desktop, @columns-desktop);
+ 	}

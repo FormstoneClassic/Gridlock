@@ -1,0 +1,22 @@
+@import "fs.gridlock-config.less";
+
+	/* !Tablet, 6 column, 720 (min 740) */
+	@media screen and (min-width: @width-break-tablet) and (max-width: (@width-break-desktop - 1px)) {
+		.@{class-container} .@{class-row} {
+			.scafoldGrid(@class-tablet, @columns-tablet);
+		}
+	}
+
+	/* !Desktop, 12 column, 960 (min 980) */
+	@media screen and (min-width: @width-break-desktop) {
+		.@{class-container} .@{class-row} {
+			.scafoldGrid(@class-desktop, @columns-desktop);
+		}
+	}
+
+	/* !Max, 12 column, 1200 (min 1220) */
+	@media screen and (min-width: @width-break-max) {
+		.@{class-container} .@{class-row} {
+			.scafoldGrid(@class-max, @columns-desktop);
+		}
+	}
