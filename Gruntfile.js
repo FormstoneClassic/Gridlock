@@ -41,6 +41,19 @@ module.exports = function(grunt) {
 				}
 			}
 		}
+/*
+		// LESS
+		less: {
+			target: {
+				options: {
+					banner: '<%= meta.banner %>',
+					report: 'min',
+					cleancss: false
+				},
+				files: '<%= pkg.css %>'
+			}
+		}
+*/
 	});
 
 	// Readme
