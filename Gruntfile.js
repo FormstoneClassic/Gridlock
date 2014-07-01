@@ -17,7 +17,7 @@ module.exports = function(grunt) {
 			target: {
 				options: {
 					report: 'min',
-					cleancss: true
+					cleancss: false
 				},
 				files: {
 					'<%= pkg.codename %>-base.css': [ 'src/<%= pkg.codename %>-base.less' ],
