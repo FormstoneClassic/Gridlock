@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.1.0 - 2014-07-01 
+ * Gridlock v3.1.1 - 2014-07-02 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -30,6 +30,7 @@
   /* !Padded Cells */
   /* !Contained Cells */
   /* !Right Cells */
+  /* !Centered Cells */
 }
 .gridlock .row:after {
   clear: both;
@@ -90,6 +91,15 @@
 .gridlock .row [class*="desktop-"].right,
 .gridlock .row [class*="max-"].right {
   float: right;
+}
+.gridlock .row [class*="all-"].centered,
+.gridlock .row [class*="min-"].centered,
+.gridlock .row [class*="mobile-"].centered,
+.gridlock .row [class*="tablet-"].centered,
+.gridlock .row [class*="desktop-"].centered,
+.gridlock .row [class*="max-"].centered {
+  float: none;
+  margin: 0 auto;
 }
 /* !Rows, Thinest to Widest  */
 @media screen and (min-width: 500px) {
