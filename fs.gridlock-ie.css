@@ -1,36 +1,18 @@
 /* 
- * Gridlock v3.1.1 - 2014-07-02 
+ * Gridlock v3.1.2 - 2014-07-02 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
  * Copyright 2014 Ben Plum; MIT Licensed 
  */ 
 
-/* Variables */
-/* Column */
-/* Columns */
-/* Columns - Fractioned */
-/* Columns - Pushed */
-/* Scafold - Base */
-/* Scafold - Grid */
-/* !Reset Box-sizing */
 *,
 *:before,
 *:after {
   *behavior: url(boxsizing.htc);
 }
-/* IE Specific */
 .gridlock .row {
   width: 960px;
-  /* Fractions */
-  /* Fractions Push */
-  /* Fractions Contained */
-  /* Fractions Contained Push */
-  /* Centered */
-  /* Cells */
-  /* Cells Push */
-  /* Contained */
-  /* Contained Push */
 }
 .gridlock .row .desktop-fourth {
   width: 22.91666667%;
@@ -74,7 +56,7 @@
 .gridlock .row .contained.desktop-push-half {
   margin-left: 50%;
 }
-.gridlock .row .gridlock .row [class*="desktop-"].center {
+.gridlock .row [class*="desktop-"].centered {
   margin-left: auto;
   margin-right: auto;
 }

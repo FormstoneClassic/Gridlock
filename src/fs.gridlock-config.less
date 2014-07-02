@@ -1,10 +1,10 @@
-/* Variables */
+// Variables
 
 @class-container:     gridlock;
 @class-row:           row;
 @class-contained:     contained;
 @class-padded:        padded;
-@class-centered:      center;
+@class-centered:      centered;
 
 @class-all:           all;
 @class-min:           min;
@@ -31,13 +31,13 @@
 
 @gutter:              1.0416666666666667%;
 
-/* Column */
+// Column
 
 .column (@count, @margin, @index) {
 	width: ((100% / @count) * @index) - (@margin * 2);
 }
 
-/* Columns */
+// Columns
 
 .columns (@class, @margin, @count, @prefix:~"", @index:1) when (@index <= @count) {
 	@{prefix}.@{class}-@{index} {
@@ -47,7 +47,7 @@
 	.columns(@class, @margin, @count, @prefix, (@index + 1));
 }
 
-/* Columns - Fractioned */
+// Columns - Fractioned
 
 .columnsFractioned (@class, @margin, @prefix:~"") {
 	@{prefix}.@{class}-fourth {
@@ -64,7 +64,7 @@
 	}
 }
 
-/* Columns - Pushed */
+// Columns - Pushed
 
 .columnPushed (@count, @margin, @index) {
 	margin-left: ((100% / @count) * @index) + @margin;
@@ -90,37 +90,37 @@
 	}
 }
 
-/* Scafold - Base */
+// Scafold - Base
 
 .scafoldGridBase (@class) {
-	/* Fractions */
+	// Fractions
 	.columnsFractioned(@class, @gutter);
 
-	/* Fractions Push */
+	// Fractions Push
 	.columnsPushedFractioned(@class, @gutter);
 
-	/* Fractions Contained */
+	// Fractions Contained
 	.columnsFractioned(@class, 0, ~".@{class-contained}");
 
-	/* Fractions Contained Push */
+	// Fractions Contained Push
 	.columnsPushedFractioned(@class, 0, ~".@{class-contained}");
 
-	/* Centered */
-	.@{class-container} .@{class-row} [class*="@{class}-"].@{class-centered} { margin-left: auto; margin-right: auto; }
+	// Centered
+	[class*="@{class}-"].@{class-centered} { margin-left: auto; margin-right: auto; }
 }
 
-/* Scafold - Grid */
+// Scafold - Grid
 
 .scafoldGrid (@class, @columns) {
-	/* Cells */
+	// Cells
 	.columns(@class, @gutter, @columns);
 
-	/* Cells Push */
+	// Cells Push
 	.columnsPushed(@class, @gutter, @columns);
 
-	/* Contained */
+	// Contained
 	.columns(@class, 0, @columns, ~".@{class-contained}");
 
-	/* Contained Push */
+	// Contained Push
 	.columnsPushed(@class, 0, @columns, ~".@{class-contained}");
 }

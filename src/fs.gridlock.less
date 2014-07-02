@@ -1,6 +1,6 @@
 @import "fs.gridlock-config.less";
 
-	/* !Reset Box-sizing */
+	// !Reset Box-sizing
 	*,
 	*:before,
 	*:after {
@@ -10,14 +10,14 @@
 	}
 
 	.@{class-container} .@{class-row} {
-		/* !Defaults */
+		// !Row Default
 		margin-left: auto; margin-right: auto; width: @width-min;
 
 		&:after { clear: both; content: "."; display: block; height: 0; line-height: 0; visibility: hidden; }
-		.@{class-row} { margin-left: -@gutter; margin-right: -@gutter; width: calc(100% + (@gutter * 2)); }
+		.@{class-row} { margin-left: -@gutter; margin-right: -@gutter; width: 100% + (@gutter * 2); }
 		.@{class-contained} .@{class-row} { margin-left: 0; margin-right: 0; width: 100%; }
 
-		/* !All Cells */
+		// !All Cells
 		[class*="@{class-all}-"],
 		[class*="@{class-min}-"],
 		[class*="@{class-mobile}-"],
@@ -25,7 +25,7 @@
 		[class*="@{class-desktop}-"],
 		[class*="@{class-max}-"] { float: left; margin-left: @gutter; margin-right: @gutter; }
 
-		/* !Padded Cells */
+		// !Padded Cells
 		[class*="@{class-all}-"].@{class-padded},
 		[class*="@{class-min}-"].@{class-padded},
 		[class*="@{class-mobile}-"].@{class-padded},
@@ -38,7 +38,7 @@
 			         *behavior: none;
 		}
 
-		/* !Contained Cells */
+		// !Contained Cells
 		[class*="@{class-all}-"].@{class-contained},
 		[class*="@{class-min}-"].@{class-contained},
 		[class*="@{class-mobile}-"].@{class-contained},
@@ -46,24 +46,16 @@
 		[class*="@{class-desktop}-"].@{class-contained},
 		[class*="@{class-max}-"].@{class-contained} { margin-left: 0; margin-right: 0; }
 
-		/* !Right Cells */
+		// !Right Cells
 		[class*="@{class-all}-"].right,
 		[class*="@{class-min}-"].right,
 		[class*="@{class-mobile}-"].right,
 		[class*="@{class-tablet}-"].right,
 		[class*="@{class-desktop}-"].right,
 		[class*="@{class-max}-"].right { float: right; }
-
-		/* !Centered Cells */
-		[class*="@{class-all}-"].centered,
-		[class*="@{class-min}-"].centered,
-		[class*="@{class-mobile}-"].centered,
-		[class*="@{class-tablet}-"].centered,
-		[class*="@{class-desktop}-"].centered,
-		[class*="@{class-max}-"].centered { float: none; margin: 0 auto; }
 	}
 
-	/* !Rows, Thinest to Widest  */
+	// !Rows, Thinest to Widest
 	@media screen and (min-width: @width-break-mobile) {
 		.@{class-container} .@{class-row} { width: @width-mobile; }
 	}
@@ -77,15 +69,15 @@
 		.@{class-container} .@{class-row} { width: @width-max; }
 	}
 
-	/* !Fluid */
+	// !Fluid Grid
 	.@{class-container}-fluid .@{class-row} { width: 98%; }
 
-	/* !All */
+	// !All
 	.@{class-container} .@{class-row} {
 		.scafoldGridBase(@class-all);
 	}
 
-	/* !Mobile, 540 (max 740) */
+	// !Mobile, 540 (max 740)
 	@media screen and (max-width: (@width-break-tablet - 1px)) {
 		.@{class-container} .@{class-row} {
 			.scafoldGrid(@class-mobile, @columns-mobile);
@@ -94,30 +86,36 @@
 		}
 	}
 
-	/* !Min, 300 (max 500) */
+	// !Min, 300 (max 500)
 	@media screen and (max-width: (@width-break-mobile - 1px)) {
 		.@{class-container} .@{class-row} {
 			.scafoldGridBase(@class-min);
 		}
 	}
 
-	/* !Tablet, 6 column, 720 (min 740) */
+	// !Tablet, 6 column, 720 (min 740)
 	@media screen and (min-width: @width-break-tablet) and (max-width: (@width-break-desktop - 1px)) {
 		.@{class-container} .@{class-row} {
+			.scafoldGrid(@class-tablet, @columns-tablet);
+
 			.scafoldGridBase(@class-tablet);
 		}
 	}
 
-	/* !Desktop, 12 column, 960 (min 980) */
+	// !Desktop, 12 column, 960 (min 980)
 	@media screen and (min-width: @width-break-desktop) {
 		.@{class-container} .@{class-row} {
+			.scafoldGrid(@class-desktop, @columns-desktop);
+
 			.scafoldGridBase(@class-desktop);
 		}
 	}
 
-	/* !Max, 12 column, 1200 (min 1220), ignored by IE8 */
+	// !Max, 12 column, 1200 (min 1220)
 	@media screen and (min-width: @width-break-max) {
 		.@{class-container} .@{class-row} {
+			.scafoldGrid(@class-max, @columns-desktop);
+
 			.scafoldGridBase(@class-max);
 		}
 	}

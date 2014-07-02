@@ -20,8 +20,7 @@ module.exports = function(grunt) {
 					cleancss: false
 				},
 				files: {
-					'<%= pkg.codename %>-base.css': [ 'src/<%= pkg.codename %>-base.less' ],
-					'<%= pkg.codename %>-grid.css': [ 'src/<%= pkg.codename %>-grid.less' ],
+					'<%= pkg.codename %>.css': [ 'src/<%= pkg.codename %>.less' ],
 					'<%= pkg.codename %>-ie.css': [ 'src/<%= pkg.codename %>-ie.less' ]
 				}
 			}
@@ -36,8 +35,7 @@ module.exports = function(grunt) {
 				},
 				files: {
 					src: [
-						'<%= pkg.codename %>-base.css',
-						'<%= pkg.codename %>-grid.css',
+						'<%= pkg.codename %>.css',
 						'<%= pkg.codename %>-ie.css'
 					]
 				}
@@ -50,8 +48,7 @@ module.exports = function(grunt) {
 					sync: [ 'name', 'version', 'description', 'author', 'license', 'homepage' ],
 					overrides: {
 						main: [
-							'<%= pkg.codename %>-base.css',
-							'<%= pkg.codename %>-grid.css'
+							'<%= pkg.codename %>.css'
 						],
 						ignore: [ "*.jquery.json", "Gruntfile.js", "src/" ]
 					}
