@@ -1,16 +1,3 @@
-<a href="http://gruntjs.com" target="_blank"><img src="https://cdn.gruntjs.com/builtwith.png" alt="Built with Grunt"></a> 
-# Gridlock 
-
-A responsive CSS grid system. Part of the Formstone Library. 
-
-- [Demo](http://formstone.it/components/Gridlock/demo/index.html) 
-- [Documentation](http://formstone.it/gridlock/) 
-
-#### Bower Support 
-`bower install Gridlock` 
-
----
-
 ## Usage
 
 Gridlock works by nesting 'cells' within 'rows'. Cells are defined by classes that define widths at specific breakpoints that correspond to general screen sizes. By default, Gridlock renders 3 columns on mobile, 6 columns on tablet and 12 columns on mobile.
