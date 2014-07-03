@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.1.2 - 2014-07-02 
+ * Gridlock v3.1.2 - 2014-07-03 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -144,6 +144,7 @@
   margin-left: 50%;
 }
 .gridlock .row [class*="all-"].centered {
+  float: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -221,6 +222,7 @@
     margin-left: 50%;
   }
   .gridlock .row [class*="mobile-"].centered {
+    float: none;
     margin-left: auto;
     margin-right: auto;
   }
@@ -269,6 +271,7 @@
     margin-left: 50%;
   }
   .gridlock .row [class*="min-"].centered {
+    float: none;
     margin-left: auto;
     margin-right: auto;
   }
@@ -383,6 +386,7 @@
     margin-left: 50%;
   }
   .gridlock .row [class*="tablet-"].centered {
+    float: none;
     margin-left: auto;
     margin-right: auto;
   }
@@ -569,6 +573,7 @@
     margin-left: 50%;
   }
   .gridlock .row [class*="desktop-"].centered {
+    float: none;
     margin-left: auto;
     margin-right: auto;
   }
@@ -755,6 +760,7 @@
     margin-left: 50%;
   }
   .gridlock .row [class*="max-"].centered {
+    float: none;
     margin-left: auto;
     margin-right: auto;
   }
