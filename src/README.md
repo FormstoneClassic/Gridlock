@@ -48,48 +48,48 @@ This will effect every element on the page. It can have unexpected results but w
 
 ### Helper Classes
 
-Helper classes can be added to cells to modify their default behavior in predictable ways. 
+Helper classes can be added to cells to modify their default behavior in predictable ways.
 
-Class | Description
----|---|---
-`padded` | Swaps cell margin for padding. Allows backgrounds to touch while maintaining gutters.
-`contained` | Removes cell margin. Allows backgrounds to touch by removing gutters.
-`centered` | Centers cell. Useful for centering odd column counts cells.
+| Class | Description |
+| --- | --- | --- |
+| `padded` | Swaps cell margin for padding. Allows backgrounds to touch while maintaining gutters. |
+| `contained` | Removes cell margin. Allows backgrounds to touch by removing gutters. |
+| `centered` | Centers cell. Useful for centering odd column counts cells. |
 
 ### Configuration
 
 Gridlock can also be configured and rebuilt using Grunt. Simply edit the variables found in `/src/fs.gridlock-config.less` before running the default `grunt` process.
 
-Variable | Default | Description
----|---|---|
-**Structure** |
-`@class-container` | `gridlock` | Container class
-`@class-row` | `row` | Row class
-`@class-contained` | `contained` | Contained helper class
-`@class-padded` | `padded` | Padded helper class
-`@class-centered` | `centered` | Centered helper class
-**Cells** |
-`@class-all` | `all` | All cell class
-`@class-min` | `min` | Min cell class
-`@class-mobile` | `mobile` | Mobile cell class
-`@class-tablet` | `tablet` | Tablet cell class
-`@class-desktop` | `desktop` | Desktop cell class
-`@class-max` | `max` | Max cell class
-**Columns** |
-`@columns-mobile` | `3` | Mobile column count
-`@columns-tablet` | `6` | Tablet column count
-`@columns-desktop` | `12` | Desktop column count
-**Widths** |
-`@width-min` | `300px` | Min row width
-`@width-mobile` | `480px` | Mobile row width
-`@width-tablet` | `720px` | Tablet row width
-`@width-desktop` | `960px` | Desktop row width
-`@width-max` | `1200px` | Max row width
-**Breakpoints** |
-`@width-break-min` | `320px` | Min break width
-`@width-break-mobile` | `500px` | Mobile break width
-`@width-break-tablet` | `740px` | Tablet break width
-`@width-break-desktop` | `980px` | Desktop break width
-`@width-break-max` | `1220px` | Max break width
-**Gutters** |
-`@gutter` | `1.0416666666666667%;` | Gutter width
+| Variable | Default | Description |
+| --- | --- | --- |
+| **Structure** | | |
+| `@class-container` | `gridlock` | Container class |
+| `@class-row` | `row` | Row class |
+| `@class-contained` | `contained` | Contained helper class |
+| `@class-padded` | `padded` | Padded helper class |
+| `@class-centered` | `centered` | Centered helper class |
+| **Cells** | | |
+| `@class-all` | `all` | All cell class |
+| `@class-min` | `min` | Min cell class |
+| `@class-mobile` | `mobile` | Mobile cell class |
+| `@class-tablet` | `tablet` | Tablet cell class |
+| `@class-desktop` | `desktop` | Desktop cell class |
+| `@class-max` | `max` | Max cell class |
+| **Columns** | | |
+| `@columns-mobile` | `3` | Mobile column count |
+| `@columns-tablet` | `6` | Tablet column count |
+| `@columns-desktop` | `12` | Desktop column count |
+| **Widths** | | |
+| `@width-min` | `300px` | Min row width |
+| `@width-mobile` | `480px` | Mobile row width |
+| `@width-tablet` | `720px` | Tablet row width |
+| `@width-desktop` | `960px` | Desktop row width |
+| `@width-max` | `1200px` | Max row width |
+| **Breakpoints** | | |
+| `@width-break-min` | `320px` | Min break width |
+| `@width-break-mobile` | `500px` | Mobile break width |
+| `@width-break-tablet` | `740px` | Tablet break width |
+| `@width-break-desktop` | `980px` | Desktop break width |
+| `@width-break-max` | `1220px` | Max break width |
+| **Gutters** | | |
+| `@gutter` | `1.0416666666666667%;` | Gutter width |
