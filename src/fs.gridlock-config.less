@@ -50,22 +50,22 @@
 
 	// Column Static
 
-	.columnStatic (@parent-width, @count, @margin, @index) {
-		width: ceil( ((@parent-width / @count) * @index) - (unit((@margin / 100) * @parent-width, px) * 2) );
-	}
+	// .columnStatic (@parent-width, @count, @margin, @index) {
+	//	width: ceil( ((@parent-width / @count) * @index) - (unit((@margin / 100) * @parent-width, px) * 2) );
+	// }
 
 	// Columns Static
 
-	.columnsStatic (@parent-width, @class, @margin, @count, @prefix:~"", @index:1) when (@index <= @count) {
-		// Static
-		& when (@parent-width > 0) {
-			@{prefix}.@{class}-static-@{index} {
-				.columnStatic(@parent-width, @count, @margin, @index);
-			}
-		}
-
-		.columnsStatic(@parent-width, @class, @margin, @count, @prefix, (@index + 1));
-	}
+	// .columnsStatic (@parent-width, @class, @margin, @count, @prefix:~"", @index:1) when (@index <= @count) {
+	// 	// Static
+	// 	& when (@parent-width > 0) {
+	// 		@{prefix}.@{class}-static-@{index} {
+	// 			.columnStatic(@parent-width, @count, @margin, @index);
+	// 		}
+	// 	}
+	//
+	// 	.columnsStatic(@parent-width, @class, @margin, @count, @prefix, (@index + 1));
+	// }
 
 	// Columns - Fractioned
 
@@ -85,20 +85,20 @@
 		}
 
 		// Static
-		& when (@parent-width > 0) {
-			@{prefix}.@{class}-fourth-static {
-				.columnStatic(@parent-width, 4, @margin, 1);
-			}
-			@{prefix}.@{class}-third-static {
-				.columnStatic(@parent-width, 3, @margin, 1);
-			}
-			@{prefix}.@{class}-half-static {
-				.columnStatic(@parent-width, 2, @margin, 1);
-			}
-			@{prefix}.@{class}-full-static {
-				.columnStatic(@parent-width, 1, @margin, 1);
-			}
-		}
+		// & when (@parent-width > 0) {
+		// 	@{prefix}.@{class}-fourth-static {
+		// 		.columnStatic(@parent-width, 4, @margin, 1);
+		// 	}
+		// 	@{prefix}.@{class}-third-static {
+		// 		.columnStatic(@parent-width, 3, @margin, 1);
+		// 	}
+		// 	@{prefix}.@{class}-half-static {
+		// 		.columnStatic(@parent-width, 2, @margin, 1);
+		// 	}
+		// 	@{prefix}.@{class}-full-static {
+		// 		.columnStatic(@parent-width, 1, @margin, 1);
+		// 	}
+		// }
 	}
 
 	// Columns - Pushed
@@ -129,16 +129,16 @@
 
 	// Static Margins
 
-	.marginStatic (@parent-width, @class, @margin) {
-		[class*=".@{class-all}-static-"],
-		[class*=".@{class}-static-"] { margin-left: unit( floor((@margin / 100) * @parent-width), px); margin-right: unit( floor((@margin / 100) * @parent-width), px); }
-
-		[class*=".@{class-all}-static-"].@{class-contained},
-		[class*=".@{class}-static-"].@{class-contained} { margin-left: unit( floor((@margin / 100) * @parent-width), px); margin-right: unit( floor((@margin / 100) * @parent-width), px); }
-
-		[class*=".@{class-all}-static-"].@{class-padded},
-		[class*=".@{class}-static-"].@{class-padded} { margin-left: unit( floor((@margin / 100) * @parent-width), px); margin-right: unit( floor((@margin / 100) * @parent-width), px); }
-	}
+	// .marginStatic (@parent-width, @class, @margin) {
+	// 	[class*="@{class-all}-static-"],
+	// 	[class*="@{class}-static-"] { margin-left: unit( floor((@margin / 100) * @parent-width), px); margin-right: unit( floor((@margin / 100) * @parent-width), px); }
+	//
+	// 	[class*="@{class-all}-static-"].@{class-contained},
+	// 	[class*="@{class}-static-"].@{class-contained} { margin-left: unit( floor((@margin / 100) * @parent-width), px); margin-right: unit( floor((@margin / 100) * @parent-width), px); }
+	//
+	// 	[class*="@{class-all}-static-"].@{class-padded},
+	// 	[class*="@{class}-static-"].@{class-padded} { margin-left: unit( floor((@margin / 100) * @parent-width), px); margin-right: unit( floor((@margin / 100) * @parent-width), px); }
+	// }
 
 	// Scafold - Base
 
@@ -175,11 +175,11 @@
 		.columnsPushed(@parent-width, @class, 0, @columns, ~".@{class-contained}");
 
 		// Cells Static
-		.columnsStatic(@parent-width, @class, @gutter, @columns);
+		// .columnsStatic(@parent-width, @class, @gutter, @columns);
 
 		// Contained Static
-		.columnsStatic(@parent-width, @class, 0, @columns, ~".@{class-contained}");
+		// .columnsStatic(@parent-width, @class, 0, @columns, ~".@{class-contained}");
 
 		// Static Margins
-		.marginStatic(@parent-width, @class, @columns);
+		// .marginStatic(@parent-width, @class, @columns);
 	}

@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.1.5 - 2014-07-15 
+ * Gridlock v3.1.6 - 2014-07-15 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -179,39 +179,6 @@
   .gridlock .row .contained.mobile-push-2 {
     margin-left: 66.66666667%;
   }
-  .gridlock .row .mobile-static-1 {
-    width: 150px;
-  }
-  .gridlock .row .mobile-static-2 {
-    width: 310px;
-  }
-  .gridlock .row .mobile-static-3 {
-    width: 470px;
-  }
-  .gridlock .row .contained.mobile-static-1 {
-    width: 160px;
-  }
-  .gridlock .row .contained.mobile-static-2 {
-    width: 320px;
-  }
-  .gridlock .row .contained.mobile-static-3 {
-    width: 480px;
-  }
-  .gridlock .row [class*=".all-static-"],
-  .gridlock .row [class*=".mobile-static-"] {
-    margin-left: 14px;
-    margin-right: 14px;
-  }
-  .gridlock .row [class*=".all-static-"].contained,
-  .gridlock .row [class*=".mobile-static-"].contained {
-    margin-left: 14px;
-    margin-right: 14px;
-  }
-  .gridlock .row [class*=".all-static-"].padded,
-  .gridlock .row [class*=".mobile-static-"].padded {
-    margin-left: 14px;
-    margin-right: 14px;
-  }
   .gridlock .row .mobile-fourth {
     width: 22.91666667%;
   }
@@ -223,18 +190,6 @@
   }
   .gridlock .row .mobile-full {
     width: 97.91666667%;
-  }
-  .gridlock .row .mobile-fourth-static {
-    width: 110px;
-  }
-  .gridlock .row .mobile-third-static {
-    width: 150px;
-  }
-  .gridlock .row .mobile-half-static {
-    width: 230px;
-  }
-  .gridlock .row .mobile-full-static {
-    width: 470px;
   }
   .gridlock .row .mobile-push-fourth {
     margin-left: 26.04166667%;
@@ -256,18 +211,6 @@
   }
   .gridlock .row .contained.mobile-full {
     width: 100%;
-  }
-  .gridlock .row .contained.mobile-fourth-static {
-    width: 120px;
-  }
-  .gridlock .row .contained.mobile-third-static {
-    width: 160px;
-  }
-  .gridlock .row .contained.mobile-half-static {
-    width: 240px;
-  }
-  .gridlock .row .contained.mobile-full-static {
-    width: 480px;
   }
   .gridlock .row .contained.mobile-push-fourth {
     margin-left: 25%;
@@ -315,39 +258,6 @@
   .gridlock .row .contained.min-push-2 {
     margin-left: 66.66666667%;
   }
-  .gridlock .row .min-static-1 {
-    width: 94px;
-  }
-  .gridlock .row .min-static-2 {
-    width: 194px;
-  }
-  .gridlock .row .min-static-3 {
-    width: 294px;
-  }
-  .gridlock .row .contained.min-static-1 {
-    width: 100px;
-  }
-  .gridlock .row .contained.min-static-2 {
-    width: 200px;
-  }
-  .gridlock .row .contained.min-static-3 {
-    width: 300px;
-  }
-  .gridlock .row [class*=".all-static-"],
-  .gridlock .row [class*=".min-static-"] {
-    margin-left: 9px;
-    margin-right: 9px;
-  }
-  .gridlock .row [class*=".all-static-"].contained,
-  .gridlock .row [class*=".min-static-"].contained {
-    margin-left: 9px;
-    margin-right: 9px;
-  }
-  .gridlock .row [class*=".all-static-"].padded,
-  .gridlock .row [class*=".min-static-"].padded {
-    margin-left: 9px;
-    margin-right: 9px;
-  }
   .gridlock .row .min-fourth {
     width: 22.91666667%;
   }
@@ -359,18 +269,6 @@
   }
   .gridlock .row .min-full {
     width: 97.91666667%;
-  }
-  .gridlock .row .min-fourth-static {
-    width: 69px;
-  }
-  .gridlock .row .min-third-static {
-    width: 94px;
-  }
-  .gridlock .row .min-half-static {
-    width: 144px;
-  }
-  .gridlock .row .min-full-static {
-    width: 294px;
   }
   .gridlock .row .min-push-fourth {
     margin-left: 26.04166667%;
@@ -392,18 +290,6 @@
   }
   .gridlock .row .contained.min-full {
     width: 100%;
-  }
-  .gridlock .row .contained.min-fourth-static {
-    width: 75px;
-  }
-  .gridlock .row .contained.min-third-static {
-    width: 100px;
-  }
-  .gridlock .row .contained.min-half-static {
-    width: 150px;
-  }
-  .gridlock .row .contained.min-full-static {
-    width: 300px;
   }
   .gridlock .row .contained.min-push-fourth {
     margin-left: 25%;
@@ -487,57 +373,6 @@
   .gridlock .row .contained.tablet-push-5 {
     margin-left: 83.33333333%;
   }
-  .gridlock .row .tablet-static-1 {
-    width: 105px;
-  }
-  .gridlock .row .tablet-static-2 {
-    width: 225px;
-  }
-  .gridlock .row .tablet-static-3 {
-    width: 345px;
-  }
-  .gridlock .row .tablet-static-4 {
-    width: 465px;
-  }
-  .gridlock .row .tablet-static-5 {
-    width: 585px;
-  }
-  .gridlock .row .tablet-static-6 {
-    width: 705px;
-  }
-  .gridlock .row .contained.tablet-static-1 {
-    width: 120px;
-  }
-  .gridlock .row .contained.tablet-static-2 {
-    width: 240px;
-  }
-  .gridlock .row .contained.tablet-static-3 {
-    width: 360px;
-  }
-  .gridlock .row .contained.tablet-static-4 {
-    width: 480px;
-  }
-  .gridlock .row .contained.tablet-static-5 {
-    width: 600px;
-  }
-  .gridlock .row .contained.tablet-static-6 {
-    width: 720px;
-  }
-  .gridlock .row [class*=".all-static-"],
-  .gridlock .row [class*=".tablet-static-"] {
-    margin-left: 43px;
-    margin-right: 43px;
-  }
-  .gridlock .row [class*=".all-static-"].contained,
-  .gridlock .row [class*=".tablet-static-"].contained {
-    margin-left: 43px;
-    margin-right: 43px;
-  }
-  .gridlock .row [class*=".all-static-"].padded,
-  .gridlock .row [class*=".tablet-static-"].padded {
-    margin-left: 43px;
-    margin-right: 43px;
-  }
   .gridlock .row .tablet-fourth {
     width: 22.91666667%;
   }
@@ -549,18 +384,6 @@
   }
   .gridlock .row .tablet-full {
     width: 97.91666667%;
-  }
-  .gridlock .row .tablet-fourth-static {
-    width: 165px;
-  }
-  .gridlock .row .tablet-third-static {
-    width: 225px;
-  }
-  .gridlock .row .tablet-half-static {
-    width: 345px;
-  }
-  .gridlock .row .tablet-full-static {
-    width: 705px;
   }
   .gridlock .row .tablet-push-fourth {
     margin-left: 26.04166667%;
@@ -582,18 +405,6 @@
   }
   .gridlock .row .contained.tablet-full {
     width: 100%;
-  }
-  .gridlock .row .contained.tablet-fourth-static {
-    width: 180px;
-  }
-  .gridlock .row .contained.tablet-third-static {
-    width: 240px;
-  }
-  .gridlock .row .contained.tablet-half-static {
-    width: 360px;
-  }
-  .gridlock .row .contained.tablet-full-static {
-    width: 720px;
   }
   .gridlock .row .contained.tablet-push-fourth {
     margin-left: 25%;
@@ -749,93 +560,6 @@
   .gridlock .row .contained.desktop-push-11 {
     margin-left: 91.66666667%;
   }
-  .gridlock .row .desktop-static-1 {
-    width: 60px;
-  }
-  .gridlock .row .desktop-static-2 {
-    width: 140px;
-  }
-  .gridlock .row .desktop-static-3 {
-    width: 220px;
-  }
-  .gridlock .row .desktop-static-4 {
-    width: 300px;
-  }
-  .gridlock .row .desktop-static-5 {
-    width: 380px;
-  }
-  .gridlock .row .desktop-static-6 {
-    width: 460px;
-  }
-  .gridlock .row .desktop-static-7 {
-    width: 540px;
-  }
-  .gridlock .row .desktop-static-8 {
-    width: 620px;
-  }
-  .gridlock .row .desktop-static-9 {
-    width: 700px;
-  }
-  .gridlock .row .desktop-static-10 {
-    width: 780px;
-  }
-  .gridlock .row .desktop-static-11 {
-    width: 860px;
-  }
-  .gridlock .row .desktop-static-12 {
-    width: 940px;
-  }
-  .gridlock .row .contained.desktop-static-1 {
-    width: 80px;
-  }
-  .gridlock .row .contained.desktop-static-2 {
-    width: 160px;
-  }
-  .gridlock .row .contained.desktop-static-3 {
-    width: 240px;
-  }
-  .gridlock .row .contained.desktop-static-4 {
-    width: 320px;
-  }
-  .gridlock .row .contained.desktop-static-5 {
-    width: 400px;
-  }
-  .gridlock .row .contained.desktop-static-6 {
-    width: 480px;
-  }
-  .gridlock .row .contained.desktop-static-7 {
-    width: 560px;
-  }
-  .gridlock .row .contained.desktop-static-8 {
-    width: 640px;
-  }
-  .gridlock .row .contained.desktop-static-9 {
-    width: 720px;
-  }
-  .gridlock .row .contained.desktop-static-10 {
-    width: 800px;
-  }
-  .gridlock .row .contained.desktop-static-11 {
-    width: 880px;
-  }
-  .gridlock .row .contained.desktop-static-12 {
-    width: 960px;
-  }
-  .gridlock .row [class*=".all-static-"],
-  .gridlock .row [class*=".desktop-static-"] {
-    margin-left: 115px;
-    margin-right: 115px;
-  }
-  .gridlock .row [class*=".all-static-"].contained,
-  .gridlock .row [class*=".desktop-static-"].contained {
-    margin-left: 115px;
-    margin-right: 115px;
-  }
-  .gridlock .row [class*=".all-static-"].padded,
-  .gridlock .row [class*=".desktop-static-"].padded {
-    margin-left: 115px;
-    margin-right: 115px;
-  }
   .gridlock .row .desktop-fourth {
     width: 22.91666667%;
   }
@@ -847,18 +571,6 @@
   }
   .gridlock .row .desktop-full {
     width: 97.91666667%;
-  }
-  .gridlock .row .desktop-fourth-static {
-    width: 220px;
-  }
-  .gridlock .row .desktop-third-static {
-    width: 300px;
-  }
-  .gridlock .row .desktop-half-static {
-    width: 460px;
-  }
-  .gridlock .row .desktop-full-static {
-    width: 940px;
   }
   .gridlock .row .desktop-push-fourth {
     margin-left: 26.04166667%;
@@ -880,18 +592,6 @@
   }
   .gridlock .row .contained.desktop-full {
     width: 100%;
-  }
-  .gridlock .row .contained.desktop-fourth-static {
-    width: 240px;
-  }
-  .gridlock .row .contained.desktop-third-static {
-    width: 320px;
-  }
-  .gridlock .row .contained.desktop-half-static {
-    width: 480px;
-  }
-  .gridlock .row .contained.desktop-full-static {
-    width: 960px;
   }
   .gridlock .row .contained.desktop-push-fourth {
     margin-left: 25%;
@@ -1047,93 +747,6 @@
   .gridlock .row .contained.max-push-11 {
     margin-left: 91.66666667%;
   }
-  .gridlock .row .max-static-1 {
-    width: 75px;
-  }
-  .gridlock .row .max-static-2 {
-    width: 175px;
-  }
-  .gridlock .row .max-static-3 {
-    width: 275px;
-  }
-  .gridlock .row .max-static-4 {
-    width: 375px;
-  }
-  .gridlock .row .max-static-5 {
-    width: 475px;
-  }
-  .gridlock .row .max-static-6 {
-    width: 575px;
-  }
-  .gridlock .row .max-static-7 {
-    width: 675px;
-  }
-  .gridlock .row .max-static-8 {
-    width: 775px;
-  }
-  .gridlock .row .max-static-9 {
-    width: 875px;
-  }
-  .gridlock .row .max-static-10 {
-    width: 975px;
-  }
-  .gridlock .row .max-static-11 {
-    width: 1075px;
-  }
-  .gridlock .row .max-static-12 {
-    width: 1175px;
-  }
-  .gridlock .row .contained.max-static-1 {
-    width: 100px;
-  }
-  .gridlock .row .contained.max-static-2 {
-    width: 200px;
-  }
-  .gridlock .row .contained.max-static-3 {
-    width: 300px;
-  }
-  .gridlock .row .contained.max-static-4 {
-    width: 400px;
-  }
-  .gridlock .row .contained.max-static-5 {
-    width: 500px;
-  }
-  .gridlock .row .contained.max-static-6 {
-    width: 600px;
-  }
-  .gridlock .row .contained.max-static-7 {
-    width: 700px;
-  }
-  .gridlock .row .contained.max-static-8 {
-    width: 800px;
-  }
-  .gridlock .row .contained.max-static-9 {
-    width: 900px;
-  }
-  .gridlock .row .contained.max-static-10 {
-    width: 1000px;
-  }
-  .gridlock .row .contained.max-static-11 {
-    width: 1100px;
-  }
-  .gridlock .row .contained.max-static-12 {
-    width: 1200px;
-  }
-  .gridlock .row [class*=".all-static-"],
-  .gridlock .row [class*=".max-static-"] {
-    margin-left: 144px;
-    margin-right: 144px;
-  }
-  .gridlock .row [class*=".all-static-"].contained,
-  .gridlock .row [class*=".max-static-"].contained {
-    margin-left: 144px;
-    margin-right: 144px;
-  }
-  .gridlock .row [class*=".all-static-"].padded,
-  .gridlock .row [class*=".max-static-"].padded {
-    margin-left: 144px;
-    margin-right: 144px;
-  }
   .gridlock .row .max-fourth {
     width: 22.91666667%;
   }
@@ -1145,18 +758,6 @@
   }
   .gridlock .row .max-full {
     width: 97.91666667%;
-  }
-  .gridlock .row .max-fourth-static {
-    width: 275px;
-  }
-  .gridlock .row .max-third-static {
-    width: 375px;
-  }
-  .gridlock .row .max-half-static {
-    width: 575px;
-  }
-  .gridlock .row .max-full-static {
-    width: 1175px;
   }
   .gridlock .row .max-push-fourth {
     margin-left: 26.04166667%;
@@ -1178,18 +779,6 @@
   }
   .gridlock .row .contained.max-full {
     width: 100%;
-  }
-  .gridlock .row .contained.max-fourth-static {
-    width: 300px;
-  }
-  .gridlock .row .contained.max-third-static {
-    width: 400px;
-  }
-  .gridlock .row .contained.max-half-static {
-    width: 600px;
-  }
-  .gridlock .row .contained.max-full-static {
-    width: 1200px;
   }
   .gridlock .row .contained.max-push-fourth {
     margin-left: 25%;
