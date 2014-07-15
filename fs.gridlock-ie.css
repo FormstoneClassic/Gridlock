@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.1.4 - 2014-07-09 
+ * Gridlock v3.1.5 - 2014-07-15 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -26,6 +26,18 @@
 .gridlock .row .desktop-full {
   width: 97.91666667%;
 }
+.gridlock .row .desktop-fourth-static {
+  width: 220px;
+}
+.gridlock .row .desktop-third-static {
+  width: 300px;
+}
+.gridlock .row .desktop-half-static {
+  width: 460px;
+}
+.gridlock .row .desktop-full-static {
+  width: 940px;
+}
 .gridlock .row .desktop-push-fourth {
   margin-left: 26.04166667%;
 }
@@ -46,6 +58,18 @@
 }
 .gridlock .row .contained.desktop-full {
   width: 100%;
+}
+.gridlock .row .contained.desktop-fourth-static {
+  width: 240px;
+}
+.gridlock .row .contained.desktop-third-static {
+  width: 320px;
+}
+.gridlock .row .contained.desktop-half-static {
+  width: 480px;
+}
+.gridlock .row .contained.desktop-full-static {
+  width: 960px;
 }
 .gridlock .row .contained.desktop-push-fourth {
   margin-left: 25%;
@@ -198,4 +222,91 @@
 }
 .gridlock .row .contained.desktop-push-11 {
   margin-left: 91.66666667%;
+}
+.gridlock .row .desktop-static-1 {
+  width: 60px;
+}
+.gridlock .row .desktop-static-2 {
+  width: 140px;
+}
+.gridlock .row .desktop-static-3 {
+  width: 220px;
+}
+.gridlock .row .desktop-static-4 {
+  width: 300px;
+}
+.gridlock .row .desktop-static-5 {
+  width: 380px;
+}
+.gridlock .row .desktop-static-6 {
+  width: 460px;
+}
+.gridlock .row .desktop-static-7 {
+  width: 540px;
+}
+.gridlock .row .desktop-static-8 {
+  width: 620px;
+}
+.gridlock .row .desktop-static-9 {
+  width: 700px;
+}
+.gridlock .row .desktop-static-10 {
+  width: 780px;
+}
+.gridlock .row .desktop-static-11 {
+  width: 860px;
+}
+.gridlock .row .desktop-static-12 {
+  width: 940px;
+}
+.gridlock .row .contained.desktop-static-1 {
+  width: 80px;
+}
+.gridlock .row .contained.desktop-static-2 {
+  width: 160px;
+}
+.gridlock .row .contained.desktop-static-3 {
+  width: 240px;
+}
+.gridlock .row .contained.desktop-static-4 {
+  width: 320px;
+}
+.gridlock .row .contained.desktop-static-5 {
+  width: 400px;
+}
+.gridlock .row .contained.desktop-static-6 {
+  width: 480px;
+}
+.gridlock .row .contained.desktop-static-7 {
+  width: 560px;
+}
+.gridlock .row .contained.desktop-static-8 {
+  width: 640px;
+}
+.gridlock .row .contained.desktop-static-9 {
+  width: 720px;
+}
+.gridlock .row .contained.desktop-static-10 {
+  width: 800px;
+}
+.gridlock .row .contained.desktop-static-11 {
+  width: 880px;
+}
+.gridlock .row .contained.desktop-static-12 {
+  width: 960px;
+}
+.gridlock .row [class*=".all-static-"],
+.gridlock .row [class*=".desktop-static-"] {
+  margin-left: 115px;
+  margin-right: 115px;
+}
+.gridlock .row [class*=".all-static-"].contained,
+.gridlock .row [class*=".desktop-static-"].contained {
+  margin-left: 115px;
+  margin-right: 115px;
+}
+.gridlock .row [class*=".all-static-"].padded,
+.gridlock .row [class*=".desktop-static-"].padded {
+  margin-left: 115px;
+  margin-right: 115px;
 }

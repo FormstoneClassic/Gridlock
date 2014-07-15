@@ -74,48 +74,50 @@
 
 	// !All
 	.@{class-container} .@{class-row} {
-		.scafoldGridBase(@class-all);
+		.scafoldGridBase(0, @class-all);
 	}
 
 	// !Mobile, 540 (max 740)
 	@media screen and (max-width: (@width-break-tablet - 1px)) {
 		.@{class-container} .@{class-row} {
-			.scafoldGrid(@class-mobile, @columns-mobile);
+			.scafoldGrid(@width-mobile, @class-mobile, @columns-mobile);
 
-			.scafoldGridBase(@class-mobile);
+			.scafoldGridBase(@width-mobile, @class-mobile);
 		}
 	}
 
 	// !Min, 300 (max 500)
 	@media screen and (max-width: (@width-break-mobile - 1px)) {
 		.@{class-container} .@{class-row} {
-			.scafoldGridBase(@class-min);
+			.scafoldGrid(@width-min, @class-min, @columns-mobile);
+
+			.scafoldGridBase(@width-min, @class-min);
 		}
 	}
 
 	// !Tablet, 6 column, 720 (min 740)
 	@media screen and (min-width: @width-break-tablet) and (max-width: (@width-break-desktop - 1px)) {
 		.@{class-container} .@{class-row} {
-			.scafoldGrid(@class-tablet, @columns-tablet);
+			.scafoldGrid(@width-tablet, @class-tablet, @columns-tablet);
 
-			.scafoldGridBase(@class-tablet);
+			.scafoldGridBase(@width-tablet, @class-tablet);
 		}
 	}
 
 	// !Desktop, 12 column, 960 (min 980)
 	@media screen and (min-width: @width-break-desktop) {
 		.@{class-container} .@{class-row} {
-			.scafoldGrid(@class-desktop, @columns-desktop);
+			.scafoldGrid(@width-desktop, @class-desktop, @columns-desktop);
 
-			.scafoldGridBase(@class-desktop);
+			.scafoldGridBase(@width-desktop, @class-desktop);
 		}
 	}
 
 	// !Max, 12 column, 1200 (min 1220)
 	@media screen and (min-width: @width-break-max) {
 		.@{class-container} .@{class-row} {
-			.scafoldGrid(@class-max, @columns-desktop);
+			.scafoldGrid(@width-max, @class-max, @columns-desktop);
 
-			.scafoldGridBase(@class-max);
+			.scafoldGridBase(@width-max, @class-max);
 		}
 	}
