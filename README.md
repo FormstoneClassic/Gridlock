@@ -13,7 +13,7 @@ A responsive CSS grid system. Part of the Formstone Library.
 
 ## Usage
 
-Gridlock works by nesting 'cells' within 'rows'. Cells are defined by classes that define widths at specific breakpoints that correspond to general screen sizes. By default, Gridlock renders 3 columns on mobile, 6 columns on tablet and 12 columns on mobile.
+Gridlock works by nesting 'cells' within 'rows'. Cells are defined by classes that set widths at specific breakpoints. The breakpoints  correspond to general screen sizes. By default, Gridlock renders 3 columns on mobile, 6 columns on tablet and 12 columns on mobile.
 
 ### Markup
 
@@ -59,17 +59,67 @@ Gridlock relies on border-box and includes a global box-sizing reset:
 
 This will effect every element on the page. It can have unexpected results but will help speed development by modifying how padding and borders effect. Learn more.
 
+### Row Widths and Columns Counts
+
+| Name | Screen Size | Row Width | Column Count |
+| --- | --- | --- | --- |
+| min | smaller than 500px | 300px | 3 |
+| mobile | smaller than 740px | 480px | 3 |
+| tablet | 740px to 960px | 720px | 6 |
+| desktop | 960px to 1220px | 960px | 12 |
+| max | larger than 1220px | 1200px | 12 |
+
+### Defining Cells
+
+| Class | Description |
+| --- | --- |
+| `min-X` | only min size |
+| `mobile-X` | both mobile and min sizes |
+| `tablet-X` | tablet size |
+| `desktop-X` | both desktop and max sizes |
+| `max-X` | only max size |
+| `all-X` | all sizes |
+
+Cells are defined by the target screen size and column count, relative to it's screen size. For example `mobile-2` will produce a cell spanning 2 of the 3 total columns in the mobile screen size. Cell classes should be stacked to specify column spans across all screen sizes:
+
+```
+&lt;div class="mobile-3 tablet-6 desktop-12"&gt;...&lt;/div&gt;
+```
+
+The `max-X` and `min-X` classes give you an added level of control when targeting the desktop and mobile sizes. For example, you may need a cell to span 2 columns at the larger mobile size, but span the full width at the smallest mobile size:
+
+```
+&lt;div class="min-3 mobile-2 ..."&gt;...&lt;/div&gt;
+```
+
+The `all-X` class gives you the ability to create a cell that spans all available columns on all screen sizes:
+
+```
+&lt;div class="all-full ..."&gt;...&lt;/div&gt;
+```
+
+### Fraction Cells
+
+You can also use the fraction classes in place of specific column counts:
+
+| Class | Description |
+| --- | --- |
+| `X-full` | entire row width |
+| `X-half` | 1/2 row width |
+| `X-third` | 1/3 row width |
+| `X-fourth` | 1/4 row width |
+
 ### Helper Classes
 
 Helper classes can be added to cells to modify their default behavior in predictable ways.
 
 | Class | Description |
-| --- | --- | --- |
+| --- | --- |
 | `padded` | Swaps cell margin for padding. Allows backgrounds to touch while maintaining gutters. |
 | `contained` | Removes cell margin. Allows backgrounds to touch by removing gutters. |
 | `centered` | Centers cell. Useful for centering odd column counts cells. |
 
-### Configuration
+### LESS Configuration
 
 Gridlock can also be configured and rebuilt using Grunt. Simply edit the variables found in `/src/fs.gridlock-config.less` before running the default `grunt` process.
 
