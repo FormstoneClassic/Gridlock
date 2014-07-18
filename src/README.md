@@ -70,19 +70,19 @@ This will effect every element on the page. It can have unexpected results but w
 Cells are defined by the target screen size and column count, relative to it's screen size. For example `mobile-2` will produce a cell spanning 2 of the 3 total columns in the mobile screen size. Cell classes should be stacked to specify column spans across all screen sizes:
 
 ```
-&lt;div class="mobile-3 tablet-6 desktop-12"&gt;...&lt;/div&gt;
+<div class="mobile-3 tablet-6 desktop-12">...</div>
 ```
 
 The `max-X` and `min-X` classes give you an added level of control when targeting the desktop and mobile sizes. For example, you may need a cell to span 2 columns at the larger mobile size, but span the full width at the smallest mobile size:
 
 ```
-&lt;div class="min-3 mobile-2 ..."&gt;...&lt;/div&gt;
+<div class="min-3 mobile-2 ...">...</div>
 ```
 
 The `all-X` class gives you the ability to create a cell that spans all available columns on all screen sizes:
 
 ```
-&lt;div class="all-full ..."&gt;...&lt;/div&gt;
+<div class="all-full ...">...</div>
 ```
 
 ### Fraction Cells
