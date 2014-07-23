@@ -29,7 +29,7 @@ A basic example may look something like:
 </body>
 ```
 
-This will create 3 cells that span 3 columns on mobile, 2 columns on desktop and 4 columns on desktop. You can think of the nested structure like a directory tree:
+This will create 3 cells that span 3 columns on mobile, 2 columns on tablet and 4 columns on desktop. You can think of the nested structure like a directory tree:
 
 ```
 gridlock
