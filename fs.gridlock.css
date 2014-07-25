@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.1.6 - 2014-07-22 
+ * Gridlock v3.1.7 - 2014-07-25 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -101,6 +101,9 @@
 .gridlock-fluid .row {
   width: 98%;
 }
+.gridlock .row .all-fifth {
+  width: 17.91666667%;
+}
 .gridlock .row .all-fourth {
   width: 22.91666667%;
 }
@@ -113,6 +116,9 @@
 .gridlock .row .all-full {
   width: 97.91666667%;
 }
+.gridlock .row .all-push-fifth {
+  margin-left: 21.04166667%;
+}
 .gridlock .row .all-push-fourth {
   margin-left: 26.04166667%;
 }
@@ -121,6 +127,9 @@
 }
 .gridlock .row .all-push-half {
   margin-left: 51.04166667%;
+}
+.gridlock .row .contained.all-fifth {
+  width: 20%;
 }
 .gridlock .row .contained.all-fourth {
   width: 25%;
@@ -133,6 +142,9 @@
 }
 .gridlock .row .contained.all-full {
   width: 100%;
+}
+.gridlock .row .contained.all-push-fifth {
+  margin-left: 20%;
 }
 .gridlock .row .contained.all-push-fourth {
   margin-left: 25%;
@@ -179,6 +191,9 @@
   .gridlock .row .contained.mobile-push-2 {
     margin-left: 66.66666667%;
   }
+  .gridlock .row .mobile-fifth {
+    width: 17.91666667%;
+  }
   .gridlock .row .mobile-fourth {
     width: 22.91666667%;
   }
@@ -191,6 +206,9 @@
   .gridlock .row .mobile-full {
     width: 97.91666667%;
   }
+  .gridlock .row .mobile-push-fifth {
+    margin-left: 21.04166667%;
+  }
   .gridlock .row .mobile-push-fourth {
     margin-left: 26.04166667%;
   }
@@ -199,6 +217,9 @@
   }
   .gridlock .row .mobile-push-half {
     margin-left: 51.04166667%;
+  }
+  .gridlock .row .contained.mobile-fifth {
+    width: 20%;
   }
   .gridlock .row .contained.mobile-fourth {
     width: 25%;
@@ -211,6 +232,9 @@
   }
   .gridlock .row .contained.mobile-full {
     width: 100%;
+  }
+  .gridlock .row .contained.mobile-push-fifth {
+    margin-left: 20%;
   }
   .gridlock .row .contained.mobile-push-fourth {
     margin-left: 25%;
@@ -258,6 +282,9 @@
   .gridlock .row .contained.min-push-2 {
     margin-left: 66.66666667%;
   }
+  .gridlock .row .min-fifth {
+    width: 17.91666667%;
+  }
   .gridlock .row .min-fourth {
     width: 22.91666667%;
   }
@@ -270,6 +297,9 @@
   .gridlock .row .min-full {
     width: 97.91666667%;
   }
+  .gridlock .row .min-push-fifth {
+    margin-left: 21.04166667%;
+  }
   .gridlock .row .min-push-fourth {
     margin-left: 26.04166667%;
   }
@@ -278,6 +308,9 @@
   }
   .gridlock .row .min-push-half {
     margin-left: 51.04166667%;
+  }
+  .gridlock .row .contained.min-fifth {
+    width: 20%;
   }
   .gridlock .row .contained.min-fourth {
     width: 25%;
@@ -290,6 +323,9 @@
   }
   .gridlock .row .contained.min-full {
     width: 100%;
+  }
+  .gridlock .row .contained.min-push-fifth {
+    margin-left: 20%;
   }
   .gridlock .row .contained.min-push-fourth {
     margin-left: 25%;
@@ -373,6 +409,9 @@
   .gridlock .row .contained.tablet-push-5 {
     margin-left: 83.33333333%;
   }
+  .gridlock .row .tablet-fifth {
+    width: 17.91666667%;
+  }
   .gridlock .row .tablet-fourth {
     width: 22.91666667%;
   }
@@ -385,6 +424,9 @@
   .gridlock .row .tablet-full {
     width: 97.91666667%;
   }
+  .gridlock .row .tablet-push-fifth {
+    margin-left: 21.04166667%;
+  }
   .gridlock .row .tablet-push-fourth {
     margin-left: 26.04166667%;
   }
@@ -393,6 +435,9 @@
   }
   .gridlock .row .tablet-push-half {
     margin-left: 51.04166667%;
+  }
+  .gridlock .row .contained.tablet-fifth {
+    width: 20%;
   }
   .gridlock .row .contained.tablet-fourth {
     width: 25%;
@@ -405,6 +450,9 @@
   }
   .gridlock .row .contained.tablet-full {
     width: 100%;
+  }
+  .gridlock .row .contained.tablet-push-fifth {
+    margin-left: 20%;
   }
   .gridlock .row .contained.tablet-push-fourth {
     margin-left: 25%;
@@ -560,6 +608,9 @@
   .gridlock .row .contained.desktop-push-11 {
     margin-left: 91.66666667%;
   }
+  .gridlock .row .desktop-fifth {
+    width: 17.91666667%;
+  }
   .gridlock .row .desktop-fourth {
     width: 22.91666667%;
   }
@@ -572,6 +623,9 @@
   .gridlock .row .desktop-full {
     width: 97.91666667%;
   }
+  .gridlock .row .desktop-push-fifth {
+    margin-left: 21.04166667%;
+  }
   .gridlock .row .desktop-push-fourth {
     margin-left: 26.04166667%;
   }
@@ -580,6 +634,9 @@
   }
   .gridlock .row .desktop-push-half {
     margin-left: 51.04166667%;
+  }
+  .gridlock .row .contained.desktop-fifth {
+    width: 20%;
   }
   .gridlock .row .contained.desktop-fourth {
     width: 25%;
@@ -592,6 +649,9 @@
   }
   .gridlock .row .contained.desktop-full {
     width: 100%;
+  }
+  .gridlock .row .contained.desktop-push-fifth {
+    margin-left: 20%;
   }
   .gridlock .row .contained.desktop-push-fourth {
     margin-left: 25%;
@@ -747,6 +807,9 @@
   .gridlock .row .contained.max-push-11 {
     margin-left: 91.66666667%;
   }
+  .gridlock .row .max-fifth {
+    width: 17.91666667%;
+  }
   .gridlock .row .max-fourth {
     width: 22.91666667%;
   }
@@ -759,6 +822,9 @@
   .gridlock .row .max-full {
     width: 97.91666667%;
   }
+  .gridlock .row .max-push-fifth {
+    margin-left: 21.04166667%;
+  }
   .gridlock .row .max-push-fourth {
     margin-left: 26.04166667%;
   }
@@ -767,6 +833,9 @@
   }
   .gridlock .row .max-push-half {
     margin-left: 51.04166667%;
+  }
+  .gridlock .row .contained.max-fifth {
+    width: 20%;
   }
   .gridlock .row .contained.max-fourth {
     width: 25%;
@@ -779,6 +848,9 @@
   }
   .gridlock .row .contained.max-full {
     width: 100%;
+  }
+  .gridlock .row .contained.max-push-fifth {
+    margin-left: 20%;
   }
   .gridlock .row .contained.max-push-fourth {
     margin-left: 25%;

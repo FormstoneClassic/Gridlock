@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.1.6 - 2014-07-22 
+ * Gridlock v3.1.7 - 2014-07-25 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -14,6 +14,9 @@
 .gridlock .row {
   width: 960px;
 }
+.gridlock .row .desktop-fifth {
+  width: 17.91666667%;
+}
 .gridlock .row .desktop-fourth {
   width: 22.91666667%;
 }
@@ -26,6 +29,9 @@
 .gridlock .row .desktop-full {
   width: 97.91666667%;
 }
+.gridlock .row .desktop-push-fifth {
+  margin-left: 21.04166667%;
+}
 .gridlock .row .desktop-push-fourth {
   margin-left: 26.04166667%;
 }
@@ -34,6 +40,9 @@
 }
 .gridlock .row .desktop-push-half {
   margin-left: 51.04166667%;
+}
+.gridlock .row .contained.desktop-fifth {
+  width: 20%;
 }
 .gridlock .row .contained.desktop-fourth {
   width: 25%;
@@ -46,6 +55,9 @@
 }
 .gridlock .row .contained.desktop-full {
   width: 100%;
+}
+.gridlock .row .contained.desktop-push-fifth {
+  margin-left: 20%;
 }
 .gridlock .row .contained.desktop-push-fourth {
   margin-left: 25%;

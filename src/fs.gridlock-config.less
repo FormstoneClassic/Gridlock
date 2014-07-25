@@ -71,6 +71,9 @@
 
 	.columnsFractioned (@parent-width, @class, @margin, @prefix:~"") {
 		// Percentage
+		@{prefix}.@{class}-fifth {
+			.column(@parent-width, 5, @margin, 1);
+		}
 		@{prefix}.@{class}-fourth {
 			.column(@parent-width, 4, @margin, 1);
 		}
@@ -116,6 +119,9 @@
 	}
 
 	.columnsPushedFractioned (@parent-width, @class, @margin, @prefix:~"") {
+		@{prefix}.@{class}-push-fifth {
+			.columnPushed(@parent-width, 5, @margin, 1);
+		}
 		@{prefix}.@{class}-push-fourth {
 			.columnPushed(@parent-width, 4, @margin, 1);
 		}

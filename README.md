@@ -57,7 +57,7 @@ Gridlock relies on border-box and includes a global box-sizing reset:
 }
 ```
 
-This will effect every element on the page. It can have unexpected results but will help speed development by modifying how padding and borders effect. Learn more.
+This will effect every element on the page. It can have unexpected results but will help speed development by modifying how padding and borders effect. 
 
 ### Row Widths and Columns Counts
 
