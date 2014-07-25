@@ -13,7 +13,7 @@ A responsive CSS grid system. Part of the Formstone Library.
 
 ## Usage
 
-Gridlock works by nesting 'cells' within 'rows'. Cells are defined by classes that set widths at specific breakpoints. The breakpoints  correspond to general screen sizes. By default, Gridlock renders 3 columns on mobile, 6 columns on tablet and 12 columns on mobile.
+Gridlock works by nesting 'cells' within 'rows'. Cells are defined by classes that set widths at specific breakpoints. The breakpoints  correspond to general screen sizes. By default, Gridlock renders 3 columns on mobile, 6 columns on tablet and 12 columns on desktop.
 
 ### Markup
 
