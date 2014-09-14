@@ -9,12 +9,11 @@
     "grid",
     "rwd",
     "responsive",
-    "formstone",
-    "benplum"
+    "formstone"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/benplum/Gridlock"
+    "url": "https://github.com/Formstone/Gridlock"
   },
   "homepage": "http://formstone.it/gridlock/",
   "demo": "http://formstone.it/components/Gridlock/demo/index.html",

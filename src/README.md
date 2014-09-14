@@ -16,7 +16,7 @@ A basic example may look something like:
 </body>
 ```
 
-This will create 3 cells that span 3 columns on mobile, 2 columns on tablet and 4 columns on desktop. You can think of the nested structure like a directory tree:
+This will create 3 cells that each span 3 columns on mobile, 2 columns on tablet and 4 columns on desktop screen sizes. You can think of the nested structure like a directory tree:
 
 ```
 gridlock
@@ -44,7 +44,7 @@ Gridlock relies on border-box and includes a global box-sizing reset:
 }
 ```
 
-This will effect every element on the page. It can have unexpected results but will help speed development by modifying how padding and borders effect. 
+This will effect every element on the page and can have unexpected results. In the long run it will help speed development by modifying how padding and borders effect the box model calculations. [Learn more about border-box](http://www.paulirish.com/2012/box-sizing-border-box-ftw/).
 
 ### Row Widths and Columns Counts
 
@@ -67,7 +67,7 @@ This will effect every element on the page. It can have unexpected results but w
 | `max-X` | only max size |
 | `all-X` | all sizes |
 
-Cells are defined by the target screen size and column count, relative to it's screen size. For example `mobile-2` will produce a cell spanning 2 of the 3 total columns in the mobile screen size. Cell classes should be stacked to specify column spans across all screen sizes:
+Cells are defined by the target screen size and column count, relative to it's screen size. For example `mobile-2` will produce a cell spanning 2 of the 3 available columns in the mobile screen size range. Cell classes should be stacked to specify column spans across all screen sizes:
 
 ```
 <div class="mobile-3 tablet-6 desktop-12">...</div>
@@ -79,7 +79,7 @@ The `max-X` and `min-X` classes give you an added level of control when targetin
 <div class="min-3 mobile-2 ...">...</div>
 ```
 
-The `all-X` class gives you the ability to create a cell that spans all available columns on all screen sizes:
+The `all-X` classes give you the ability to create a cell that spans the specified width on all screen sizes (only works with fraction cells):
 
 ```
 <div class="all-full ...">...</div>
