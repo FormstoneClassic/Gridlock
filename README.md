@@ -109,6 +109,18 @@ You can also use the fraction classes in place of specific column counts:
 | `X-third` | 1/3 row width |
 | `X-fourth` | 1/4 row width |
 
+### Hidden Cells
+
+You can hide cells at specific screen sizes:
+
+| Class | Description |
+| --- | --- |
+| `min-hide` | Hide on min |
+| `mobile-hide` | Hide on mobile |
+| `tablet-hide` | Hide on tablet |
+| `desktop-hide` | Hide on desktop |
+| `max-hide` | Hide on max |
+
 ### Helper Classes
 
 Helper classes can be added to cells to modify their default behavior in predictable ways.
@@ -117,7 +129,7 @@ Helper classes can be added to cells to modify their default behavior in predict
 | --- | --- |
 | `padded` | Swaps cell margin for padding. Allows backgrounds to touch while maintaining gutters. |
 | `contained` | Removes cell margin. Allows backgrounds to touch by removing gutters. |
-| `centered` | Centers cell. Useful for centering odd column counts cells. |
+| `centered` | Centers cell. Useful for centering odd column count cells. |
 
 ### LESS Configuration
 

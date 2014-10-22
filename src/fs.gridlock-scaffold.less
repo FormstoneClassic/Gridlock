@@ -115,6 +115,13 @@
 		width: 98%;
 	}
 
+	// !Fluid Grid - Mobile Only
+	@media screen and (max-width: (@width-break-tablet - 1px)) {
+		.@{class-container}-mobile-fluid .@{class-row} {
+			width: 98%;
+		}
+	}
+
 	// !All
 	.@{class-container} .@{class-row} {
 		.generateGridBase(0, @class-all);

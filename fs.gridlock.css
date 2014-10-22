@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.2.0 - 2014-10-22 
+ * Gridlock v3.2.1 - 2014-10-22 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -96,6 +96,11 @@
 .gridlock-fluid .row {
   width: 98%;
 }
+@media screen and (max-width: 739px) {
+  .gridlock-mobile-fluid .row {
+    width: 98%;
+  }
+}
 .gridlock .row .all-fifth {
   width: 17.91666667%;
 }
@@ -154,6 +159,9 @@
   float: none;
   margin-left: auto;
   margin-right: auto;
+}
+.gridlock .row .all-hide {
+  display: none;
 }
 @media screen and (max-width: 739px) {
   .gridlock .row .mobile-1 {
@@ -245,6 +253,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .gridlock .row .mobile-hide {
+    display: none;
+  }
 }
 @media screen and (max-width: 499px) {
   .gridlock .row .min-1 {
@@ -335,6 +346,9 @@
     float: none;
     margin-left: auto;
     margin-right: auto;
+  }
+  .gridlock .row .min-hide {
+    display: none;
   }
 }
 @media screen and (min-width: 740px) and (max-width: 979px) {
@@ -462,6 +476,9 @@
     float: none;
     margin-left: auto;
     margin-right: auto;
+  }
+  .gridlock .row .tablet-hide {
+    display: none;
   }
 }
 @media screen and (min-width: 980px) {
@@ -662,6 +679,9 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .gridlock .row .desktop-hide {
+    display: none;
+  }
 }
 @media screen and (min-width: 1220px) {
   .gridlock .row .max-1 {
@@ -860,5 +880,8 @@
     float: none;
     margin-left: auto;
     margin-right: auto;
+  }
+  .gridlock .row .max-hide {
+    display: none;
   }
 }

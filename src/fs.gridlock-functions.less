@@ -82,7 +82,16 @@
 		.columnsPushedFractioned(@parent-width, @class, 0, ~".@{class-contained}");
 
 		// Centered
-		[class*="@{class}-"].@{class-centered} { float: none; margin-left: auto; margin-right: auto; }
+		[class*="@{class}-"].@{class-centered} {
+			float: none;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		// Hide
+		.@{class}-hide {
+			display: none;
+		}
 	}
 
 	// Generate - Grid
