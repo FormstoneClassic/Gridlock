@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.1.7 - 2014-09-14 
+ * Gridlock v3.2.0 - 2014-10-22 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -210,4 +210,12 @@
 }
 .gridlock .row .contained.desktop-push-11 {
   margin-left: 91.66666667%;
+}
+.gridlock .row [class*="all-"].padded,
+.gridlock .row [class*="min-"].padded,
+.gridlock .row [class*="mobile-"].padded,
+.gridlock .row [class*="tablet-"].padded,
+.gridlock .row [class*="desktop-"].padded,
+.gridlock .row [class*="max-"].padded {
+  *behavior: none;
 }

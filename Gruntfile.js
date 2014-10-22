@@ -14,15 +14,32 @@ module.exports = function(grunt) {
 		},
 		// LESS
 		less: {
-			target: {
+			main: {
+				files: {
+					'<%= pkg.codename %>.css': 'src/<%= pkg.codename %>.less',
+					'<%= pkg.codename %>.ie.css': 'src/<%= pkg.codename %>.ie.less'
+				}
+			},
+			min: {
 				options: {
 					report: 'min',
-					cleancss: false
+					cleancss: true
 				},
 				files: {
-					'<%= pkg.codename %>.css': [ 'src/<%= pkg.codename %>.less' ],
-					'<%= pkg.codename %>-ie.css': [ 'src/<%= pkg.codename %>-ie.less' ]
+					'<%= pkg.codename %>.min.css': 'src/<%= pkg.codename %>.less',
+					'<%= pkg.codename %>.ie.min.css': 'src/<%= pkg.codename %>.ie.less'
 				}
+			}
+
+
+		},
+		// Auto Prefixer
+		autoprefixer: {
+			options: {
+				borwsers: [ '> 1%', 'last 5 versions', 'Firefox ESR', 'Opera 12.1', '>= ie 8' ]
+			},
+			no_dest: {
+				 src: '*.css'
 			}
 		},
 		//Banner
@@ -36,7 +53,9 @@ module.exports = function(grunt) {
 				files: {
 					src: [
 						'<%= pkg.codename %>.css',
-						'<%= pkg.codename %>-ie.css'
+						'<%= pkg.codename %>.min.css',
+						'<%= pkg.codename %>.ie.css',
+						'<%= pkg.codename %>.ie.min.css'
 					]
 				}
 			}
@@ -77,10 +96,11 @@ module.exports = function(grunt) {
 
 	// Load tasks
 	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-banner');
 	grunt.loadNpmTasks('grunt-npm2bower-sync');
 
 	// Default task.
-	grunt.registerTask('default', [ 'less', 'usebanner', 'sync', 'buildReadme' ]);
+	grunt.registerTask('default', [ 'less', 'autoprefixer', 'usebanner', 'sync', 'buildReadme' ]);
 
 };

@@ -1,5 +1,5 @@
 /* 
- * Gridlock v3.1.7 - 2014-09-14 
+ * Gridlock v3.2.0 - 2014-10-22 
  * A responsive CSS grid system. Part of the Formstone Library. 
  * http://formstone.it/gridlock/ 
  * 
@@ -9,32 +9,30 @@
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 .gridlock .row {
+  width: 300px;
   margin-left: auto;
   margin-right: auto;
-  width: 300px;
 }
 .gridlock .row:after {
+  height: 0;
   clear: both;
   content: ".";
   display: block;
-  height: 0;
   line-height: 0;
   visibility: hidden;
 }
 .gridlock .row .row {
+  width: 102.08333333%;
   margin-left: -1.04166667%;
   margin-right: -1.04166667%;
-  width: 102.08333333%;
 }
 .gridlock .row .contained .row {
+  width: 100%;
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
 }
 .gridlock .row [class*="all-"],
 .gridlock .row [class*="min-"],
@@ -52,14 +50,11 @@
 .gridlock .row [class*="tablet-"].padded,
 .gridlock .row [class*="desktop-"].padded,
 .gridlock .row [class*="max-"].padded {
+  box-sizing: content-box;
   margin-left: 0;
   margin-right: 0;
   padding-left: 1.04166667%;
   padding-right: 1.04166667%;
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  *behavior: none;
 }
 .gridlock .row [class*="all-"].contained,
 .gridlock .row [class*="min-"].contained,
