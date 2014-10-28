@@ -39,13 +39,13 @@ module.exports = function(grunt) {
 		// Auto Prefixer
 		autoprefixer: {
 			options: {
-				borwsers: [ '> 1%', 'last 5 versions', 'Firefox ESR', 'Opera 12.1', '>= ie 8' ]
+				browsers: [ '> 1%', 'last 5 versions', 'Firefox ESR', 'Opera 12.1', 'IE 8', 'IE 9' ]
 			},
 			no_dest: {
 				 src: '*.css'
 			}
 		},
-		//Banner
+		// Banner
 		usebanner: {
 			banner: {
 				options: {
@@ -63,7 +63,7 @@ module.exports = function(grunt) {
 				}
 			}
 		},
-		//Bower sync
+		// Bower sync
 		sync: {
 			all: {
 				options: {
@@ -76,8 +76,27 @@ module.exports = function(grunt) {
 					}
 				}
 			}
+		},
+		// Watcher - For dev only!!
+		watch: {
+			styles: {
+				files: [
+					'src/**.less'
+				],
+				tasks: [
+					'less',
+					'autoprefixer'
+				]
+			}
 		}
 	});
+
+	// Load tasks
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-less');
+	grunt.loadNpmTasks('grunt-autoprefixer');
+	grunt.loadNpmTasks('grunt-banner');
+	grunt.loadNpmTasks('grunt-npm2bower-sync');
 
 	// Readme
 	grunt.registerTask('buildReadme', 'Build Formstone README.md file.', function () {
@@ -96,12 +115,6 @@ module.exports = function(grunt) {
 		grunt.file.write(destination, markdown);
 		grunt.log.writeln('File "' + destination + '" created.');
 	});
-
-	// Load tasks
-	grunt.loadNpmTasks('grunt-contrib-less');
-	grunt.loadNpmTasks('grunt-autoprefixer');
-	grunt.loadNpmTasks('grunt-banner');
-	grunt.loadNpmTasks('grunt-npm2bower-sync');
 
 	// Default task.
 	grunt.registerTask('default', [ 'less', 'autoprefixer', 'usebanner', 'sync', 'buildReadme' ]);
