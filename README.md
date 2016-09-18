@@ -5,8 +5,8 @@
 
 A responsive CSS grid system. Part of the Formstone Library. 
 
-- [Demo](http://classic.formstone.it/components/Gridlock/demo/index.html) 
-- [Documentation](http://classic.formstone.it/gridlock/) 
+- [Demo](https://formstone.it/components/grid/demo/) 
+- [Documentation](https://formstone.it/components/grid/) 
 
 #### Bower Support 
 `bower install Gridlock` 
